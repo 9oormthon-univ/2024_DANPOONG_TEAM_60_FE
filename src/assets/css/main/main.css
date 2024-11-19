@@ -1,0 +1,38 @@
+body, html, #root {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Nanum Gothic', sans-serif;
+  align-items: center;
+  overflow-y: scroll
+}
+
+.empty-space {
+  width: 100%;
+  height: 54px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #c7d9f7;
+  height: 900px; /*877px*/
+  width: 100%;
+  max-width: 450px;
+  border-top-left-radius: 47px;
+  border-top-right-radius: 47px;
+  align-items: center;
+  justify-content: start;
+  overflow-y: scroll;
+}
+
+.main-container {
+  width: 88%;
+  height: 100%;
+  max-width: 405px;
+  align-items: start;
+  margin-top: 54px;
+}
