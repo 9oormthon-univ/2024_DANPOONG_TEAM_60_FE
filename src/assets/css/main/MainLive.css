@@ -1,0 +1,78 @@
+body, html, #root {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+    align-items: center;
+  }
+
+p {
+    font-size: 10px;
+    line-height: 12.1px;
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+.welfare-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: left;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid #0053D6;
+    width: 100%;
+    height: 88px;
+    border-radius: 15px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0;
+    position: relative;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 68px;
+    margin-left: 6%;
+    margin-right: auto;
+}
+
+.live-icon-img {
+    width: 56px;
+    height: 56px;
+}
+
+.arrow-icon-img {
+    width: 31px;
+    height: 31px;
+    margin-left: 16px;
+}
+
+/*title, content 글씨체 SUIT로 교체*/
+
+.text-container {
+    width: 56%;
+}
+
+.title {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 12px;
+}
+
+.content {
+    font-size: 9px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}

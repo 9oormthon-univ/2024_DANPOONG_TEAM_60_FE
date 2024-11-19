@@ -1,8 +1,25 @@
 // 복지 지원 섹션 파일
 import React from 'react';
+import '../../styles/Main-components/MainWelfare.css';
+import welfare from '../../assets/welfare_icon.png';
+import arrow from '../../assets/arrpw_icon.png';
 
 const MainWelfare = () => {
-  return <div>MainWelfare</div>;
+  return (
+    <div className='welfare-container'>
+      <p>본인의 맞춤형 복지 서비스와 혜택을 확인해보세요.</p>
+      <a className='btn-container' href='http://localhost:3000/Login'>
+        <div className='icon-container'>
+          <img src={welfare} alt='welfare' className='welfare-icon-img' />
+        </div>
+        <div className='text-container'>
+          <div className='title'>복지 지원</div>
+          <div className='content'>본인의 연령, 가족 구성, 소득 수준에 맞는 정부 및 민간 지원 혜택을 추천합니다.</div>
+        </div>
+        <img src={arrow} alt='welfare' className='arrow-icon-img' />
+      </a>
+    </div>
+  );
 };
 
 export default MainWelfare;

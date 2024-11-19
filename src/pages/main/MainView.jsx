@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/MainView.css'
 import MainHeader from '../../components/Main-component/MainHeader';
 import Main from '../../components/Main-component/Main';
 import MainIntro from '../../components/Main-component/MainIntro';
@@ -12,7 +13,7 @@ import MainFooter from '../../components/Main-component/MainFooter';
 // 메인 페이지 뷰 파일
 const MainView = () => {
   return (
-    <>
+    <div className='view-container'>
       <MainHeader />
       <Main>
         <MainIntro />
@@ -22,8 +23,7 @@ const MainView = () => {
         <MainUrgent />
         <MainLive />
       </Main>
-      <MainFooter />
-    </>
+    </div>
   );
 };
 
