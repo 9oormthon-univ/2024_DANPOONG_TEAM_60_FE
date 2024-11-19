@@ -1,8 +1,8 @@
 // 복지 지원 섹션 파일
 import React from 'react';
-import '../../styles/Main-components/MainEducation.css';
-import edu from '../../assets/edu_icon.png';
-import arrow from '../../assets/arrpw_icon.png';
+import '../../assets/css/main/MainEducation.css';
+import edu from '../../assets/images/main/edu_icon.png';
+import arrow from '../../assets/images/main/arrow_icon.png';
 
 const MainEducation = () => {
   return (

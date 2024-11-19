@@ -1,11 +1,10 @@
 // header 파일
 import React from 'react';
-import "../../styles/Main-components/MainHeader.css"
-import Ham from "../../assets/Ham(white).png"
-import gge from "../../assets/gge(white).png"
-import ga from "../../assets/ga(white).png"
-import chi from "../../assets/chi(white).png"
-import person from "../../assets/person_icon.png"
+import "../../assets/css/main/MainHeader.css"
+import Ham from "../../assets/images/main/Ham(white).png"
+import gge from "../../assets/images/main/gge(white).png"
+import ga from "../../assets/images/main/ga(white).png"
+import chi from "../../assets/images/main/chi(white).png"
 
 const MainHeader = () => {
   return (

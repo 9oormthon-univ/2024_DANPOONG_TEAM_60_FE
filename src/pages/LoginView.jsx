@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/LoginView.css';
-import Ham from '../assets/Ham.png';
-import gge from '../assets/gge.png';
-import ga from '../assets/ga.png';
-import chi from '../assets/chi.png';
-import loginBtn from '../assets/kakao_login_small.png';
+import '../assets/css/login/LoginView.css';
+import Ham from '../assets/images/login/Ham.png';
+import gge from '../assets/images/login/gge.png';
+import ga from '../assets/images/login/ga.png';
+import chi from '../assets/images/login/chi.png';
+import loginBtn from '../assets/images/login/kakao_login_small.png';
 
 const LoginView = () => {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/MainView.css'
+import '../../assets/css/main/MainView.css'
 import MainHeader from '../../components/Main-component/MainHeader';
 import Main from '../../components/Main-component/Main';
 import MainIntro from '../../components/Main-component/MainIntro';

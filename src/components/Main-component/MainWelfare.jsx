@@ -1,8 +1,8 @@
 // 복지 지원 섹션 파일
 import React from 'react';
-import '../../styles/Main-components/MainWelfare.css';
-import welfare from '../../assets/welfare_icon.png';
-import arrow from '../../assets/arrpw_icon.png';
+import '../../assets/css/main/MainWelfare.css';
+import welfare from '../../assets/images/main/welfare_icon.png';
+import arrow from '../../assets/images/main/arrow_icon.png';
 
 const MainWelfare = () => {
   return (
