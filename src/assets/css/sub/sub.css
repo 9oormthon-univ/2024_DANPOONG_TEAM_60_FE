@@ -1,1 +1,40 @@
 /* sub css */
+body,
+html,
+#root {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Nanum Gothic', sans-serif;
+  align-items: center;
+}
+
+.sub-Header {
+  background-color: #265bcb;
+  color: white;
+  height: 71px;
+  width: 100vw;
+  border-radius: 13px;
+}
+
+.sub-MainTitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: white;
+}
+
+.sub-Background {
+  background-color: #f2f6fd;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sub-ContainTitle {
+}
+
+.sub-Welfare__container {
+}
