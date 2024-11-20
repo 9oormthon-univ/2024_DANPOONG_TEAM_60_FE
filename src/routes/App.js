@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainView from '../pages/main/MainView';
 import LoadingView from '../pages/main/LoadingView';
 import Login from '../pages/LoginView';
+import Redirect from '../components/Login-component/KakaoRedirect';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Route path="/" element={<LoadingView />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Main" element={<MainView />} />
+        <Route path="/auth" element={<Redirect />}/>
       </Routes>
     </BrowserRouter>
   );

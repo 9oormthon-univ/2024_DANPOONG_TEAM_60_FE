@@ -26,7 +26,6 @@ body, html, #root {
   border-top-right-radius: 47px;
   align-items: center;
   justify-content: start;
-  overflow-y: scroll;
 }
 
 .main-container {
