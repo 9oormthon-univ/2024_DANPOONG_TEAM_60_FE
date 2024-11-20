@@ -1,9 +1,9 @@
 import React from 'react';
-import './styles/Navbar.css';
-import homeIcon from '../assets/images/main';
-import chatIcon from './assets/chat_icon.png';
-import bellIcon from './assets/bell_icon.png';
-import clipboardIcon from './assets/board_icon.png';
+import '../assets/css/nav/Navbar.css';
+import homeIcon from '../assets/images/nav/home_icon.png';
+import chatIcon from './assets/images/nav/chat_icon.png';
+import bellIcon from './assets/images/nav/bell_icon.png';
+import clipboardIcon from './assets/images/nav/board_icon.png';
 
 const Navbar = () => {
   return (

@@ -1,6 +1,6 @@
 // 인트로 파일
 import React from 'react';
-import '../../styles/Main-components/MainIntro.css'
+import '../../assets/css/main/MainIntro.css'
 
 const MainIntro = () => {
   return (

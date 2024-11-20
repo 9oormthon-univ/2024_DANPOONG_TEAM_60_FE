@@ -1,0 +1,17 @@
+body, html, #root {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+    align-items: center;
+  }
+  
+  .view-container {
+      background-color: #265BCB;
+      height: 100%;
+      width: 100%;
+      max-width: 450px;
+  }

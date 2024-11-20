@@ -1,8 +1,8 @@
 // 복지 지원 섹션 파일
 import React from 'react';
-import '../../styles/Main-components/MainHealth.css';
-import health from '../../assets/health_icon.png';
-import arrow from '../../assets/arrpw_icon.png';
+import '../../assets/css/main/MainHealth.css';
+import health from '../../assets/images/main/health_icon.png';
+import arrow from '../../assets/images/main/arrow_icon.png';
 
 const MainHealth = () => {
   return (

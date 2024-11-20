@@ -1,6 +1,6 @@
 // main 섹션 통합 파일
 import React from 'react';
-import '../../styles/Main-components/Main.css'
+import '../../assets/css/main/main.css'
 
 const Main = ({ children }) => {
   return (
