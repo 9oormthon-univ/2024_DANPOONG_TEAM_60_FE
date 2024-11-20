@@ -11,6 +11,7 @@ import SubHealth from '../components/Sub-component/SubHealth';
 import SubEducation from '../components/Sub-component/SubEducation';
 import SubUrgent from '../components/Sub-component/SubUrgent';
 import SubLive from '../components/Sub-component/SubLive';
+import Redirect from '../components/Login-component/KakaoRedirect';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/" element={<LoadingView />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Main" element={<MainView />} />
+        <Route path="/auth" element={<Redirect />}/>
         <Route path="/SubWelfare" element={<SubWelfare />} />
         <Route path="/SubHealth" element={<SubHealth />} />
         <Route path="/SubEducation" element={<SubEducation />} />
