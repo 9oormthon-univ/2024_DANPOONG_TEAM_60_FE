@@ -1,0 +1,56 @@
+@font-face {
+    font-family: "SUIT";
+    font-weight: normal;
+    src: url("../../font/SUIT-Regular.ttf") format("truetype");
+}
+
+body, html, #root {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'SUIT';
+  overflow-y: scroll
+}
+
+.alarm-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    background-color: #c7d9f7;
+}
+
+.alarm-header {
+    background-color: #265BCB;
+    width: 100%;
+    height: 10%;
+    border-radius: 13px;
+}
+
+.alarm-image {
+    width: 220px;
+    height: 220px;
+    margin-top: 17%;
+    margin-bottom: 12.5%;
+}
+
+.alarm-btn {
+    width: 70%;
+    height: 58px;
+    background-color: #FAE100;
+    border-radius: 32px;
+    border: 0;
+    margin-bottom: 39px;
+}
+
+.alarm-info {
+    width: 60%;
+    font-family: 'SUIT';
+    font-size: 10px;
+    text-align: start;
+}

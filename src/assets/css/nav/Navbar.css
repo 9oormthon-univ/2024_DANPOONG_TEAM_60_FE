@@ -1,20 +1,25 @@
 .navbar-container {
     display: flex;
-    justify-content: space-around; /* 아이콘 사이 간격을 동일하게 유지 */
+    justify-content: space-between;
     align-items: center;
     height: 60px; /* 네비게이션 바의 높이 */
     width: 100%;
+    max-width: 450px;
     background-color: #3b5dbf; /* 파란색 배경 */
     position: fixed;
     bottom: 0; /* 화면 하단에 고정 */
+    z-index: 1000;
   }
   
   .navbar-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px; /* 각 아이콘 영역의 너비 */
-    height: 60px;
+    width: 45px; /* 각 아이콘 영역의 너비 */
+    height: auto;
+    text-decoration: none;
+    margin-left: 7%;
+    margin-right: 7%;
   }
   
   .icon-img {

@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "SUIT";
+    font-weight: normal;
+    src: url("../../font/SUIT-Regular.ttf") format("truetype");
+}
+
 body, html, #root {
     display: flex;
     flex-direction: column;
@@ -5,12 +11,13 @@ body, html, #root {
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'SUIT';
     align-items: center;
 }
 
 p {
     font-size: 10px;
+    font-family: 'SUIT';
     line-height: 12.1px;
     margin-top: 28px;
     margin-bottom: 12px;
@@ -34,7 +41,11 @@ p {
     align-items: center;
     box-sizing: border-box;
     padding: 0;
+    cursor: pointer;
     position: relative;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 2px 2px 6px;
 }
 
 .icon-container {

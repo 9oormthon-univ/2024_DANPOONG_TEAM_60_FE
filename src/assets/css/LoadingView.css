@@ -1,8 +1,14 @@
-html, body, #root {
+body, html, #root {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+@font-face {
+  font-family: "Allimjang";
+  font-weight: normal;
+  src: url("../font/Hakgyoansim\ Allimjang\ TTF\ R.ttf") format("truetype");
 }
 
 .container {
@@ -18,25 +24,28 @@ html, body, #root {
 .animated-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 10px; /* 이미지 간 간격 */
-  opacity: 0;
-  transform: translateY(20px); /* 초기 위치 아래쪽 */
-  animation: fadeInUp 0.5s forwards; /* 애니메이션 실행 */
+  
+  height: 100%;
+  background-color: #0053D6;
 }
 
-.animated-image {
-  width: 36px; /* 이미지 크기 */
-  height: auto;
+.animated-letter {
+  font-size: 35px;
+  font-family: 'Allimjang';
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s forwards;
+  margin-top: 256.18px;
 }
 
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(20px); /* 아래에서 시작 */
+    transform: translateY(20px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* 최종 위치 */
+    transform: translateY(0);
   }
 }

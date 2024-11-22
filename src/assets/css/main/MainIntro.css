@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "SUIT";
+  font-weight: normal;
+  src: url("../../font/SUIT-Regular.ttf") format("truetype");
+}
+
 .intro-container {
   display: flex;
   flex-direction: column;
@@ -10,7 +16,9 @@
 }
 
 .intro-text {
-  font-weight: bold;
-  font-size: 15px;
+  font-weight:600;
+  font-size: 18px;
+  font-family: 'SUIT';
+  line-height: 28px;
   color: #000;
 }
