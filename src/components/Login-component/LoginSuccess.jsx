@@ -1,33 +1,18 @@
 import React, { useEffect } from 'react';
-import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const LoginSuccess = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // 로그인 성공 후 사용자 정보 요청
-    const getUserInfo = async () => {
-      try {
-        const response = await axios.get('http://54.147.198.122:8080/api/me', {
-          withCredentials: true, // 세션 쿠키 포함
-        });
+    const timer = setTimeout(() => {
+      navigate('/Main');
+    }, 1000); // 1초 뒤에 /Main 주소로 이동
 
-        if (response.status === 200) {
-          // 사용자 정보가 확인되면 메인 페이지로 이동
-          navigate('/Main');
-        }
-      } catch (error) {
-        console.error("사용자 정보를 가져오는데 실패했습니다.", error);
-        // 로그인 실패 시 다시 로그인 페이지로 이동
-        navigate('/Login');
-      }
-    };
-
-    getUserInfo();
+    return () => clearTimeout(timer); // 컴포넌트 언마운트 시 타이머 정리
   }, [navigate]);
 
-  return <div>로그인 중...</div>;
+  return <div>로그인에 성공했습니다. 잠시 후 메인 페이지로 이동합니다...</div>;
 };
 
 export default LoginSuccess;
