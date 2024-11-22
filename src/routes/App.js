@@ -19,6 +19,14 @@ import LoginSuccess from '../components/Login-component/LoginSuccess';
 import Alarm from '../components/Nav-components/Alarm';
 import Board from '../components/Nav-components/Board';
 
+// edu
+import Chiup from '../components/Education-compo/Chiup';
+import School from '../components/Education-compo/School';
+import Han from '../components/Education-compo/Han';
+import Jangae from '../components/Education-compo/Jangae';
+import Jungbo from '../components/Education-compo/Jungbo';
+import Out from '../components/Education-compo/Out';
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -33,6 +41,14 @@ const App = () => {
         <Route path="/SubEducation" element={<SubEducation />} />
         <Route path="/SubUrgent" element={<SubUrgent />} />
         <Route path="/SubLive" element={<SubLive />} />
+
+        {/* education */}
+        <Route path="/Chiup" element={<Chiup />} />
+        <Route path="/School" element={<School />} />
+        <Route path="/Han" element={<Han />} />
+        <Route path="/Jangae" element={<Jangae />} />
+        <Route path="/Jungbo" element={<Jungbo />} />
+        <Route path="/Out" element={<Out />} />
 
         <Route path="Alarm" element={<Alarm />} />
         <Route path="Board" element={<Board />} />

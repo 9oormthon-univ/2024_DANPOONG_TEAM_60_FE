@@ -13,7 +13,8 @@ body, html, #root {
   width: 100%;
   font-family: 'SUIT';
   align-items: center;
-  overflow-y: scroll
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .empty-space {
@@ -24,7 +25,7 @@ body, html, #root {
 .main {
   display: flex;
   flex-direction: column;
-  background-color: #c7d9f7;
+  background-color: #F2F6FD;
   height: 935px; /*877px*/
   width: 100%;
   max-width: 450px;
