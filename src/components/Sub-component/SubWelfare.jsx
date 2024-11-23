@@ -60,8 +60,7 @@ const welfareLinks = [
 
 const SubWelfare = () => {
   return (
-    <>
-      <header>
+    <div className='sub-view-container'>
         <div className="sub-Header">
           <Link to="/Main">
             <div className="flex">
@@ -70,8 +69,8 @@ const SubWelfare = () => {
             </div>
           </Link>
         </div>
-      </header>
-      <main>
+      
+      
         <div className="sub-Background">
           {welfareLinks.map((link, index) => (
             <div className="sub-Welfare__container" key={index}>
@@ -88,8 +87,8 @@ const SubWelfare = () => {
             </div>
           ))}
         </div>
-      </main>
-    </>
+      
+    </div>
   );
 };
 
