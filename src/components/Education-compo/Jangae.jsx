@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../assets/css/sub/sub.css';
+import '../../assets/css/sub/sub-education/jangae.css';
 
 // img
 import WhiteArrow from '../../assets/images/sub/WhiteArrow.png';
@@ -17,18 +18,21 @@ const jangaeLinks = [
     imgSrc: korean,
     alt: '발달재활서비스',
     title: '발달재활서비스',
+    className: 'jangae-korean-image', // 고유 클래스
   },
   {
     href: 'https://www.miral.org/business/domestic_01.asp',
     imgSrc: Miral,
     alt: '장애아동가정 위기극복 지원사업 "스마일 어게인"',
     title: '장애아동가정 위기극복 지원사업 \n"스마일 어게인"',
+    className: 'jangae-miral-image', // 고유 클래스
   },
   {
     href: 'https://audsc.org/seoul_cart',
     imgSrc: AEUD,
     alt: '2024 서울문자통역 서비스',
     title: '2024 서울문자통역 서비스',
+    className: 'jangae-AEUD-image', // 고유 클래스
   },
 ];
 
@@ -48,10 +52,14 @@ const Jangae = () => {
       <main>
         <div className="sub-Background">
           {jangaeLinks.map((link, index) => (
-            <div className="sub-Education__container" key={index}>
+            <div className="sub-jangae__container" key={index}>
               <a href={link.href} target="_blank" rel="noreferrer">
                 <div className="flex">
-                  <img className="sub-img" src={link.imgSrc} alt={link.alt} />
+                  <img
+                    className={`sub-jangae__img ${link.className}`}
+                    src={link.imgSrc}
+                    alt={link.alt}
+                  />
                   <p className="sub-educationTitle">{link.title}</p>
                 </div>
               </a>

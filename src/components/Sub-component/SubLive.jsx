@@ -1,6 +1,7 @@
 // 서브페이지 - 생활비 절감 지원
 import React from 'react';
 import '../../assets/css/sub/sub.css';
+import '../../assets/css/sub/quarter/sub-live.css';
 
 // img
 import WhiteArrow from '../../assets/images/sub/WhiteArrow.png';
@@ -20,30 +21,35 @@ const liveLinks = [
     imgSrc: WIFI,
     alt: '무료 와이파이',
     title: '무료 와이파이',
+    className: 'wifi-image', // 고유 클래스
   },
   {
     href: 'https://play.google.com/store/apps/details?id=com.purplemint.fileFreeFoodService',
     imgSrc: GeupSik,
     alt: '무료 급식소',
     title: '무료 급식소',
+    className: 'geupsik-image', // 고유 클래스
   },
   {
     href: 'https://wis.seoul.go.kr/was/don/donatedFoodInfo.do',
     imgSrc: Seoul,
     alt: '서울복지포털',
     title: '서울복지포털',
+    className: 'seoul-image', // 고유 클래스
   },
   {
     href: 'https://www.beautifulstore.org/findstore',
     imgSrc: Gake,
     alt: '아름다운 가게',
     title: '아름다운 가게',
+    className: 'gake-image', // 고유 클래스
   },
   {
     href: 'https://www.nanumistore.org/location',
     imgSrc: Nanume,
     alt: '구세군희망나누미',
     title: '구세군희망나누미',
+    className: 'nanume-image', // 고유 클래스
   },
 ];
 
@@ -66,8 +72,12 @@ const SubLive = () => {
             <div className="sub-Live__container" key={index}>
               <a href={link.href} target="_blank" rel="noreferrer">
                 <div className="flex">
-                  <img className="sub-img" src={link.imgSrc} alt={link.alt} />
-                  <p className="sub-ContainTitle">{link.title}</p>
+                  <img
+                    className={`sub-Live__img ${link.className}`}
+                    src={link.imgSrc}
+                    alt={link.alt}
+                  />
+                  <p className="sub-Live__ContainTitle">{link.title}</p>
                 </div>
               </a>
             </div>

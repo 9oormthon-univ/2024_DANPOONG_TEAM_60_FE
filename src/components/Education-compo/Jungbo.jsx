@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../assets/css/sub/sub.css';
+import '../../assets/css/sub/sub-education/jungbo.css';
 
 // img
 import WhiteArrow from '../../assets/images/sub/WhiteArrow.png';
@@ -16,18 +17,21 @@ const jungboLinks = [
     imgSrc: DaeHan,
     alt: 'IBK와 함께하는 세이프 콜, 세이프 머니',
     title: 'IBK와 함께하는 \n세이프 콜, 세이프 머니',
+    className: 'jungbo-daeHan-image', // 고유 클래스
   },
   {
     href: 'https://kws.or.kr/news/notice.asp?mode=view&idx=21951&page=1&pageSize=10&search=0&serboardsort=1&searchStr=%EB%B3%B4%EC%9D%B4%EC%8A%A4%ED%94%BC%EC%8B%B1',
     imgSrc: DaeHan,
     alt: '전기통신금융사기 피해지원사업 (보이스피싱)',
     title: '전기통신금융사기 피해지원사업 \n(보이스피싱)',
+    className: 'jungbo-daeHan-image', // 고유 클래스
   },
   {
     href: 'https://www.kpf.or.kr/front/user/main.do',
     imgSrc: JinH,
     alt: '한국언론진흥재단 신문 무료구독 지원',
     title: '한국언론진흥재단 \n신문 무료구독 지원',
+    className: 'jungbo-jinH-image', // 고유 클래스
   },
 ];
 
@@ -47,10 +51,14 @@ const Jungbo = () => {
       <main>
         <div className="sub-Background">
           {jungboLinks.map((link, index) => (
-            <div className="sub-Education__container" key={index}>
+            <div className="sub-jungbo__container" key={index}>
               <a href={link.href} target="_blank" rel="noreferrer">
                 <div className="flex">
-                  <img className="sub-img" src={link.imgSrc} alt={link.alt} />
+                  <img
+                    className={`sub-jungbo__img ${link.className}`}
+                    src={link.imgSrc}
+                    alt={link.alt}
+                  />
                   <p className="sub-educationTitle">{link.title}</p>
                 </div>
               </a>

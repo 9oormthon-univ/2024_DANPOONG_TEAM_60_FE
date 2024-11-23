@@ -1,0 +1,62 @@
+/* img */
+
+.out-korean-image {
+  position: absolute;
+  top: -2px;
+  left: 10px;
+
+  height: 36px;
+  width: 37px;
+}
+
+.out-namyang-image {
+  position: absolute;
+  top: 4px;
+  left: 8px;
+
+  height: 22px;
+  width: 55px;
+}
+
+.out-sunCheon-image {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+
+  height: 34px;
+  width: 60px;
+}
+
+.out-good-image {
+  position: absolute;
+  top: -2px;
+  left: 4px;
+
+  height: 34px;
+  width: 50px;
+}
+
+/* 컴포넌트 */
+
+.sub-out__container {
+  display: flex;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
+  width: 90vw;
+  height: 64px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 32px;
+
+  position: relative;
+}
+
+.sub-out__img {
+  padding-top: 16px;
+  padding-left: 20px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}

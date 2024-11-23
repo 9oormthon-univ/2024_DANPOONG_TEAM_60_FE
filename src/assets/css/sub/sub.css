@@ -19,13 +19,12 @@ html,
 .sub-Header {
   background-color: #265bcb;
   color: white;
-  height: 71px;
+  height: 64px;
   width: 100vw;
 }
 
 .sub-Arrow {
-  padding-top: 14px;
-  padding-left: 10px;
+  margin-top: 14px;
 }
 
 .sub-map {
@@ -39,11 +38,17 @@ html,
 }
 
 .sub-MainTitle {
-  font-size: 17px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
   color: white;
   margin-left: 4px;
-  margin-top: 20px;
+  margin-top: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'SUIT', sans-serif;
 }
 
 .sub-Background {
@@ -54,6 +59,7 @@ html,
 
 .flex {
   display: flex;
+  align-items: center;
   justify-content: flex-start;
 }
 
@@ -64,7 +70,7 @@ html,
 }
 
 .sub-img {
-  padding-top: 20px;
+  padding-top: 12px;
   padding-left: 20px;
 }
 
@@ -73,62 +79,35 @@ html,
   font-weight: 600;
   text-decoration: none;
   color: black;
-  margin-left: 40px;
+  margin-left: 50px;
 
   white-space: pre-wrap; /* \n 줄바꿈 */
 }
 
 /* 개별 서브 페이지 css */
 
-.sub-Welfare__container {
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
-  width: 90vw;
-  height: 82px;
-  border-radius: 20px;
-  margin: 0 auto;
-  margin-top: 32px;
-}
-
-.sub-Live__container {
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
-  width: 90vw;
-  height: 82px;
-  border-radius: 20px;
-  margin: 0 auto;
-  margin-top: 32px;
-}
-
-.sub-Urgent__container {
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
-  width: 90vw;
-  height: 66px;
-  border-radius: 20px;
-  margin: 0 auto;
-  margin-top: 32px;
-}
-
-.sub-Education__container {
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
-  width: 90vw;
-  height: 66px;
-  border-radius: 20px;
-  margin: 0 auto;
-  margin-top: 32px;
-}
-
 .sub-educationTitle {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
   text-decoration: none;
   color: black;
   margin-left: 30px;
 
   white-space: pre-wrap; /* \n 줄바꿈 */
+
+  position: absolute;
+  left: 82px;
+
+  font-family: 'SUIT', sans-serif;
+
+  line-height: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* map - health */
 
 .sub-health__container {
   background-color: white;
