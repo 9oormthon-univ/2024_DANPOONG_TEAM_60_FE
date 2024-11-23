@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import alarm from "../../assets/images/nav/alarm_img.png";
+import arrowLeft from "../../assets/images/nav/arrow_left(black).png";
 import "../../assets/css/nav/Alarm.css";
 
 const Alarm = () => {
@@ -41,15 +42,18 @@ const Alarm = () => {
 
   return (
     <div className="view-container">
-      <div className="alarm-header"></div>
       <div className="alarm-container">
+      <div className="alarm-header">
+        <img src={arrowLeft} alt="arrow-left" className="arrow-left" /> 
+        <p>돌아가기</p>
+      </div>
         <img src={alarm} alt="alarm" className="alarm-image" />
         <button className="alarm-btn" onClick={handlePushNotification}>
           카카오톡으로 알림받기
         </button>
-        <div className="alarm-info">앱으로 들어가지 않아도</div>
-        <div className="alarm-info">
-          카카오톡으로 함께가치의 알림을 받을 수 있어요.
+        <div className="alarm-info">•  앱으로 들어가지 않아도 카카오톡으로</div>
+        <div className="alarm-info-bottom">
+          함께가치의 알림을 받을 수 있어요.
         </div>
       </div>
     </div>

@@ -69,7 +69,6 @@ const MainEducation = () => {
   return (
     <div onClick={handleAllowNotification} className='welfare-container'>
       <p>본인에게 필요한 교육을 찾아보세요.</p>
-<<<<<<< HEAD
       <Link className='btn-container' to='/SubEducation'>
         <div className='icon-container'>
           <img src={edu} alt='edu' className='edu-icon-img' />
@@ -80,18 +79,6 @@ const MainEducation = () => {
         </div>
         <img src={arrow} alt='arrow' className='arrow-icon-img' />
       </Link>
-=======
-        <div className='btn-container'>
-            <div className='icon-container'>
-                <img src={edu} alt='welfare' className='edu-icon-img'/>
-            </div>
-            <div className='text-container'>
-                <div className='title'>교육 지원</div>
-                <div className='content'>필요한 교육 알림받기</div>
-            </div>
-            <img src={arrow} alt='welfare' className='arrow-icon-img'/>
-        </div>
->>>>>>> develop
     </div>
   );
 };

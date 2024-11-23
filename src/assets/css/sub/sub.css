@@ -8,10 +8,9 @@ html,
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: 'Nanum Gothic', sans-serif;
-  align-items: center;
+  font-family: 'SUIT';
+  overflow-y: scroll;
   justify-content: center;
-  background-color: white;
 }
 
 /* 공용 서브 페이지 css */
