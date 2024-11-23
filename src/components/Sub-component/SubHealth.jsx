@@ -83,44 +83,42 @@ const SubHealth = () => {
   };
 
   return (
-    <>
-      <header>
-        <div className="sub-Header">
-          <Link to="/Main">
-            <div className="flex">
-              <img className="sub-Arrow" src={WhiteArrow} alt="icon" />
-              <div className="sub-MainTitle">건강 지원</div>
-            </div>
-          </Link>
-        </div>
-      </header>
-      <main>
-        <div className="sub-Background">
-          <Map
-            className="sub-map"
-            center={mapCenter} // 동적으로 변경되는 중심 좌표
-            level={3}
-          >
-            {/* 선택된 위치에 마커 표시 */}
-            <MapMarker position={mapCenter} />
-          </Map>
+    <div className="sub-view-container">
+      <div className="sub-Header">
+        <Link to="/Main">
+          <div className="flex">
+            <img className="sub-Arrow" src={WhiteArrow} alt="icon" />
+            <div className="sub-MainTitle">건강 지원</div>
+          </div>
+        </Link>
+      </div>
 
-          {healthLinks.map((link, index) => (
-            <div
-              className="sub-health__container"
-              key={index}
-              onClick={() => handleUnitClick(link.latitude, link.longitude)} // 클릭 이벤트 추가
-            >
-              <div className="flex__column">
-                <p className="sub-healthNumber">{link.number}</p>
-                <p className="sub-healthTitle">{link.title}</p>
-                <p className="sub-healthDesc">{link.desc}</p>
-              </div>
+      <div className="sub-Background">
+        <Map
+          className="sub-map"
+          center={mapCenter} // 동적으로 변경되는 중심 좌표
+          level={3}
+        >
+          {/* 선택된 위치에 마커 표시 */}
+          <MapMarker position={mapCenter} />
+        </Map>
+
+        {healthLinks.map((link, index) => (
+          <div
+            className="sub-health__container"
+            key={index}
+            onClick={() => handleUnitClick(link.latitude, link.longitude)} // 클릭 이벤트 추가
+          >
+            <div className="flex__column">
+              <p className="sub-healthNumber">{link.number}</p>
+              <p className="sub-healthTitle">{link.title}</p>
+              <p className="sub-healthDesc">{link.desc}</p>
             </div>
-          ))}
-        </div>
-      </main>
-    </>
+          </div>
+        ))}
+      </div>
+      <div className="gap-margin"></div>
+    </div>
   );
 };
 

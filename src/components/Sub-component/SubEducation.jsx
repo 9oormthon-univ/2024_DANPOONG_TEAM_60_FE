@@ -60,35 +60,32 @@ const educationLinks = [
 
 const SubEducation = () => {
   return (
-    <div className="beta">
-      <header>
-        <div className="sub-Header">
-          <Link to="/Main">
-            <div className="flex">
-              <img className="sub-Arrow" src={WhiteArrow} alt="icon" />
-              <div className="sub-MainTitle">교육 지원</div>
-            </div>
-          </Link>
-        </div>
-      </header>
-      <main>
-        <div className="sub-Background">
-          {educationLinks.map((link, index) => (
-            <div className="sub-Education__container" key={index}>
-              <Link to={link.path}>
-                <div className="flex">
-                  <img
-                    className={`sub-Education__img ${link.className}`}
-                    src={link.imgSrc}
-                    alt={link.alt}
-                  />
-                  <p className="sub-Education__ContainTitle">{link.title}</p>
-                </div>
-              </Link>
-            </div>
-          ))}
-        </div>
-      </main>
+    <div className="sub-view-container">
+      <div className="sub-Header">
+        <Link to="/Main">
+          <div className="flex">
+            <img className="sub-Arrow" src={WhiteArrow} alt="icon" />
+            <div className="sub-MainTitle">교육 지원</div>
+          </div>
+        </Link>
+      </div>
+
+      <div className="sub-Background">
+        {educationLinks.map((link, index) => (
+          <div className="sub-Education__container" key={index}>
+            <Link to={link.path}>
+              <div className="flex">
+                <img
+                  className={`sub-Education__img ${link.className}`}
+                  src={link.imgSrc}
+                  alt={link.alt}
+                />
+                <p className="sub-Education__ContainTitle">{link.title}</p>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

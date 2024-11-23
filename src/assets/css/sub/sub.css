@@ -20,6 +20,13 @@ html,
 
 /* 공용 서브 페이지 css */
 
+.sub-view-container {
+  background-color: #f2f6fd;
+  height: 100%;
+  width: 100%;
+  max-width: 450px;
+}
+
 .sub-Header {
   background-color: #265bcb;
   color: white;
@@ -57,8 +64,8 @@ html,
 
 .sub-Background {
   background-color: #f2f6fd;
-  height: 100vh;
-  width: 100vw;
+  height: 900px;
+  width: 100%;
 }
 
 .flex {
@@ -90,6 +97,46 @@ html,
 
 /* 개별 서브 페이지 css */
 
+.sub-Welfare__container {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
+  width: 90vw;
+  height: 82px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.sub-Live__container {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
+  width: 90vw;
+  height: 82px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.sub-Urgent__container {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
+  width: 90vw;
+  height: 66px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.sub-Education__container {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
+  width: 90vw;
+  height: 66px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
 .sub-educationTitle {
   font-size: 12px;
   font-weight: 600;
@@ -120,7 +167,7 @@ html,
   height: 74px;
   border-radius: 20px;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .sub-healthNumber {
@@ -154,4 +201,9 @@ html,
   margin-top: -1px;
 
   font-family: 'SUIT', sans-serif;
+}
+
+.gap-margin {
+  height: 60px;
+  background-color: #f2f6fd;
 }

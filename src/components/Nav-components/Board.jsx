@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../../assets/css/nav/Board.css";
 import arrowleft from "../../assets/images/nav/arrow_left.png";
@@ -9,13 +10,14 @@ const Board = () => {
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 5;
+  const navigate = useNavigate();
 
   useEffect(() => {
     // 서버에서 게시글 목록을 가져오는 함수
     const fetchPosts = async () => {
       try {
         const response = await axios.get("http://localhost:8080/post"); // 서버 API URL 설정
-        setPosts(response.data); // 서버에서 받아온 데이터 설정
+        setPosts(response.data.postlist); // 서버에서 받아온 데이터 설정
       } catch (error) {
         console.error("게시글을 불러오는 중 오류 발생:", error);
       }
@@ -43,41 +45,58 @@ const Board = () => {
     }
   };
 
+  // 게시글 클릭 시 상세 페이지로 이동
+  const handlePostClick = (oauthId, postId) => {
+    navigate(`/post/${oauthId}/${postId}`);
+  };
+
   return (
     <div className="board-container">
       <div className="board-header">
-        <img src={arrowleft} alt="arrowleft" className="header-left"></img>
+        <img src={arrowleft} alt="뒤로가기" className="header-left" onClick={() => navigate(-1)} />
         <p>게시판</p>
       </div>
-      {currentPosts.length > 0 ? (
-        currentPosts.map((post) => (
-          <div className="board-content" key={post.id}>
-            <div className="board-content-title">{post.title}</div>
-            <div className="board-content-text">{post.text}</div>
-            <div className="reaction">
-              <div className="reaction-item">
-                <img src={likeIcon} alt="like" className="reaction-icon" />
-                <p>{post.likes}</p>
-              </div>
-              <div className="reaction-item">
-                <img src={commentIcon} alt="comment" className="reaction-icon" />
-                <p>{post.comments}</p>
+      <div className="board-content-container">
+        {currentPosts.length > 0 ? (
+          currentPosts.map((post) => (
+            <div
+              className="board-content"
+              key={post.id}
+              onClick={() => handlePostClick(post.oauthId, post.id)}
+            >
+              <div className="board-content-title">{post.title}</div>
+              <div className="board-content-text">{post.content}</div>
+              <div className="reaction">
+                <div className="reaction-item">
+                  <img src={likeIcon} alt="like" className="reaction-icon" />
+                  <p>{post.viewCount}</p>
+                </div>
+                <div className="reaction-item">
+                  <img src={commentIcon} alt="comment" className="reaction-icon" />
+                  <p>{post.commentCount}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))
-      ) : (
-        <p>게시글이 없습니다.</p>
-      )}
+          ))
+        ) : (
+          <p>게시글이 없습니다.</p>
+        )}
+      </div>
       <div className="pagination">
         <button onClick={handlePreviousPage} disabled={currentPage === 1}>
           이전
         </button>
-        <span>{currentPage} / {Math.ceil(posts.length / postsPerPage)}</span>
+        <span>
+          {currentPage} / {Math.ceil(posts.length / postsPerPage)}
+        </span>
         <button onClick={handleNextPage} disabled={currentPage === Math.ceil(posts.length / postsPerPage)}>
           다음
         </button>
       </div>
+      {/* 글쓰기 버튼 추가 */}
+      <Link className="write-button" to="/post/new">
+        +
+      </Link>
     </div>
   );
 };

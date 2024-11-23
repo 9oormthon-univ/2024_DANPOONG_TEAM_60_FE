@@ -18,6 +18,7 @@ import LoginSuccess from '../components/Login-component/LoginSuccess';
 import Alarm from '../components/Nav-components/Alarm';
 import Board from '../components/Nav-components/Board';
 import Chat from '../components/Nav-components/Chat';
+import BoardWrite from '../components/Nav-components/BoardWrite';
 
 // edu
 import Chiup from '../components/Education-compo/Chiup';
@@ -53,6 +54,7 @@ const App = () => {
         <Route path="/Alarm" element={<Alarm />} />
         <Route path="/Board" element={<Board />} />
         <Route path="/Chat" element={<Chat />} />
+        <Route path="/boardwrite" element={<BoardWrite />} />
       </Routes>
       <Nav />
     </BrowserRouter>
