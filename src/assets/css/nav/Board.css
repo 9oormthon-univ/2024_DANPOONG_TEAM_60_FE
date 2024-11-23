@@ -39,7 +39,7 @@ body, html, #root {
   height: 71px;
   width: 100vw;
   max-width: 450px;
-  padding: 0 16px;
+  padding: 0;
 }
 
 .board-header p {
@@ -92,9 +92,6 @@ body, html, #root {
 }
 
 .write-button {
-  position: fixed;
-  bottom: 80px; /* 화면 하단에서 20px 위 */
-  right: 15px;  /* 화면 오른쪽에서 20px 왼쪽 */
   background-color: white;
   border: 1px solid #265BCB;
   border-radius: 37px;
@@ -104,7 +101,8 @@ body, html, #root {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  
+  margin-left: 50vw;
+  margin-top: 68vh;
 }
 
 .write-button:hover {
