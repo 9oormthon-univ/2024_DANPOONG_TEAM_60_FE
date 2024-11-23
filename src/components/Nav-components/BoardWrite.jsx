@@ -10,13 +10,11 @@ const BoardWrite = () => {
                 <h2>글 쓰기</h2>
             </div>
             <div className="write-content">
-                <label htmlFor="title" className="write-label">제목</label>
-                <input type="text" id="title" className="write-input" placeholder="제목을 입력하세요"/>
+                <input type="text" id="title" className="write-input" placeholder="제목"/>
                 
-                <label htmlFor="content" className="write-label">내용</label>
-                <textarea id="content" className="write-textarea" placeholder="내용을 입력하세요"></textarea>
+                <textarea id="content" className="write-textarea" placeholder="내용"></textarea>
             </div>
-            <button className="write-submit-btn">올리기</button>
+            <button className="write-submit-btn"><p>올리기</p></button>
         </div>
     );
 };

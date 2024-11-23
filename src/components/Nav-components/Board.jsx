@@ -5,6 +5,7 @@ import "../../assets/css/nav/Board.css";
 import arrowleft from "../../assets/images/nav/arrow_left.png";
 import likeIcon from "../../assets/images/nav/like_icon.png";
 import commentIcon from "../../assets/images/nav/comment_icon.png";
+import pen from "../../assets/images/nav/pencil.png";
 
 const Board = () => {
   const [posts, setPosts] = useState([]);
@@ -16,7 +17,10 @@ const Board = () => {
     // 서버에서 게시글 목록을 가져오는 함수
     const fetchPosts = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/post"); // 서버 API URL 설정
+        const response = await axios.get("http://3.93.236.79:8080/post", {
+          withCredentials: false,
+          mode: 'no-cors' // no-cors 모드 설정
+        }); // 서버 API URL 설정
         setPosts(response.data.postlist); // 서버에서 받아온 데이터 설정
       } catch (error) {
         console.error("게시글을 불러오는 중 오류 발생:", error);
@@ -53,7 +57,7 @@ const Board = () => {
   return (
     <div className="board-container">
       <div className="board-header">
-        <img src={arrowleft} alt="뒤로가기" className="header-left" onClick={() => navigate(-1)} />
+        <img src={arrowleft} alt="뒤로가기" className="board-arrow-left" onClick={() => navigate(-1)} />
         <p>게시판</p>
       </div>
       <div className="board-content-container">
@@ -95,7 +99,8 @@ const Board = () => {
       </div>
       {/* 글쓰기 버튼 추가 */}
       <Link className="write-button" to="/post/new">
-        +
+        <img src={pen} alt="pen" className="pen-img" />
+        <p className="write-text">글쓰기</p>
       </Link>
     </div>
   );
