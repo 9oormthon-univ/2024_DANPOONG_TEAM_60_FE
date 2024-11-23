@@ -3,6 +3,8 @@
 import React from 'react';
 import '../../assets/css/sub/sub.css';
 
+import { Map } from 'react-kakao-maps-sdk';
+
 // img
 import WhiteArrow from '../../assets/images/sub/WhiteArrow.png';
 
@@ -47,7 +49,12 @@ const SubHealth = () => {
       </header>
       <main>
         <div className="sub-Background">
-          <div className="sub-map"></div>
+          <Map
+            className="sub-map"
+            center={{ lat: 33.450701, lng: 126.570667 }}
+            level={3}
+          />
+
           {healthLinks.map((link, index) => (
             <div className="sub-health__container" key={index}>
               <a href={link.href} target="_blank" rel="noreferrer">

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import {jwtDecode} from 'jwt-decode'; // 기본적으로 default로 가져오기
 
 const LoginSuccess = () => {
   const [userData, setUserData] = useState(null);
@@ -10,9 +9,12 @@ const LoginSuccess = () => {
     const fetchAccessToken = async () => {
       try {
         // GET 요청을 보내고 응답에서 액세스 토큰을 body에서 추출
-        const response = await axios.get('http://44.212.10.165:8080/api/token', {
-          withCredentials: false
-        });
+        const response = await axios.get(
+          'http://44.212.10.165:8080/api/token',
+          {
+            withCredentials: false,
+          }
+        );
 
         // 응답 body에서 액세스 토큰 추출
         const accessToken = response.access_token;
@@ -35,12 +37,12 @@ const LoginSuccess = () => {
         } else {
           // 액세스 토큰이 없으면 로그인 페이지로 이동
           //window.location.href = '/login';
-          console.log("no token");
+          console.log('no token');
         }
       } catch (error) {
         console.error('Failed to fetch access token:', error);
         //window.location.href = '/login';
-        console.log("err");
+        console.log('err');
       }
     };
 
