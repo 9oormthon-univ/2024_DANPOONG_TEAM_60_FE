@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../assets/css/sub/sub.css';
+import '../../assets/css/sub/sub-education/out.css';
 
 // img
 import WhiteArrow from '../../assets/images/sub/WhiteArrow.png';
@@ -18,30 +19,35 @@ const outLinks = [
     imgSrc: korean,
     alt: '지역사회서비스 투자사업',
     title: '지역사회서비스 투자사업',
+    className: 'out-korean-image', // 고유 클래스
   },
   {
     href: 'https://www.mogef.go.kr/mi/osg/mi_osg_s003.do?classId=1098&className=%EB%8B%A4%EB%AC%B8%ED%99%94%EA%B0%80%EC%A1%B1%EA%B3%BC',
     imgSrc: korean,
     alt: '다문화가족 자녀 교육활동비 지원',
     title: '다문화가족 자녀 교육활동비 지원',
+    className: 'out-korean-image', // 고유 클래스
   },
   {
     href: 'https://www.nyj.go.kr/iframe/selectBbsNttView.do?key=51&bbsNo=62&nttNo=402466&pageUnit=10&pageIndex=92&searchCnd=all',
     imgSrc: Namyang,
     alt: '가정위탁아동 능력개발비',
     title: '가정위탁아동 능력개발비',
+    className: 'out-namyang-image', // 고유 클래스
   },
   {
     href: 'https://www.suncheon.go.kr/kr/open/0003/0003/0001/?mode=view&cntId=317',
     imgSrc: SunCheon,
     alt: '다문화가족 안정적 정착 지원',
     title: '다문화가족 안정적 정착 지원',
+    className: 'out-sunCheon-image', // 고유 클래스
   },
   {
     href: 'https://www.goodneighbors.kr/',
     imgSrc: Good,
     alt: '신한 위기가정 재기지원사업',
     title: '신한 위기가정 재기지원사업',
+    className: 'out-good-image', // 고유 클래스
   },
 ];
 
@@ -61,10 +67,14 @@ const Out = () => {
       <main>
         <div className="sub-Background">
           {outLinks.map((link, index) => (
-            <div className="sub-Education__container" key={index}>
+            <div className="sub-out__container" key={index}>
               <a href={link.href} target="_blank" rel="noreferrer">
                 <div className="flex">
-                  <img className="sub-img" src={link.imgSrc} alt={link.alt} />
+                  <img
+                    className={`sub-out__img ${link.className}`}
+                    src={link.imgSrc}
+                    alt={link.alt}
+                  />
                   <p className="sub-educationTitle">{link.title}</p>
                 </div>
               </a>

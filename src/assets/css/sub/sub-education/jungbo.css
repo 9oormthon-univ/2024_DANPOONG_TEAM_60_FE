@@ -1,0 +1,44 @@
+/* img */
+
+.jungbo-daeHan-image {
+  position: absolute;
+  top: -4px;
+  left: 10px;
+
+  height: 39px;
+  width: 38px;
+}
+
+.jungbo-jinH-image {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+
+  height: 23px;
+  width: 38px;
+}
+
+/* 컴포넌트 */
+
+.sub-jungbo__container {
+  display: flex;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
+  width: 90vw;
+  height: 64px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 32px;
+
+  position: relative;
+}
+
+.sub-jungbo__img {
+  padding-top: 16px;
+  padding-left: 20px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}

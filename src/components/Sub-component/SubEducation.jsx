@@ -1,6 +1,7 @@
 // 서브페이지 - 교육 지원
 import React from 'react';
 import '../../assets/css/sub/sub.css';
+import '../../assets/css/sub/quarter/sub-education.css';
 
 // img
 import WhiteArrow from '../../assets/images/sub/WhiteArrow.png';
@@ -27,12 +28,14 @@ const educationLinks = [
     imgSrc: School,
     title: '학교',
     alt: '학교',
+    className: 'school-image', // 고유 클래스
   },
   {
     path: '/Han',
     imgSrc: Han,
     title: '한부모가정/저출생',
     alt: '한부모가정/저출생',
+    className: 'han-image', // 고유 클래스
   },
   {
     path: '/Jangae',
@@ -45,6 +48,7 @@ const educationLinks = [
     imgSrc: Jungbo,
     title: '정보',
     alt: '정보',
+    className: 'jungbo-image', // 고유 클래스
   },
   {
     path: '/Out',
@@ -73,8 +77,12 @@ const SubEducation = () => {
             <div className="sub-Education__container" key={index}>
               <Link to={link.path}>
                 <div className="flex">
-                  <img className="sub-img" src={link.imgSrc} alt={link.alt} />
-                  <p className="sub-ContainTitle">{link.title}</p>
+                  <img
+                    className={`sub-Education__img ${link.className}`}
+                    src={link.imgSrc}
+                    alt={link.alt}
+                  />
+                  <p className="sub-Education__ContainTitle">{link.title}</p>
                 </div>
               </Link>
             </div>
