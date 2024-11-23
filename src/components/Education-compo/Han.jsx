@@ -46,36 +46,33 @@ const hanLinks = [
 
 const Han = () => {
   return (
-    <>
-      <header>
-        <div className="sub-Header">
-          <Link to="/SubEducation">
-            <div className="flex">
-              <img className="sub-Arrow" src={WhiteArrow} alt="icon" />
-              <div className="sub-MainTitle">한부모 가정/ 저출생</div>
-            </div>
-          </Link>
-        </div>
-      </header>
-      <main>
-        <div className="sub-Background">
-          {hanLinks.map((link, index) => (
-            <div className="sub-han__container" key={index}>
-              <a href={link.href} target="_blank" rel="noreferrer">
-                <div className="flex">
-                  <img
-                    className={`sub-han__img ${link.className}`}
-                    src={link.imgSrc}
-                    alt={link.alt}
-                  />
-                  <p className="sub-educationTitle">{link.title}</p>
-                </div>
-              </a>
-            </div>
-          ))}
-        </div>
-      </main>
-    </>
+    <div className="sub-view-container">
+      <div className="sub-Header">
+        <Link to="/SubEducation">
+          <div className="flex">
+            <img className="sub-Arrow" src={WhiteArrow} alt="icon" />
+            <div className="sub-MainTitle">한부모 가정/ 저출생</div>
+          </div>
+        </Link>
+      </div>
+
+      <div className="sub-Background">
+        {hanLinks.map((link, index) => (
+          <div className="sub-han__container" key={index}>
+            <a href={link.href} target="_blank" rel="noreferrer">
+              <div className="flex">
+                <img
+                  className={`sub-han__img ${link.className}`}
+                  src={link.imgSrc}
+                  alt={link.alt}
+                />
+                <p className="sub-educationTitle">{link.title}</p>
+              </div>
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 

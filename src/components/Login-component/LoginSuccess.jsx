@@ -18,11 +18,14 @@ const LoginSuccess = () => {
       // 액세스 토큰을 사용하여 카카오 사용자 정보 API 호출
       const fetchUserInfo = async () => {
         try {
-          const response = await axios.get('https://kapi.kakao.com/v2/user/me', {
-            headers: {
-              Authorization: `Bearer ${accessToken}`,
-            },
-          });
+          const response = await axios.get(
+            'https://kapi.kakao.com/v2/user/me',
+            {
+              headers: {
+                Authorization: `Bearer ${accessToken}`,
+              },
+            }
+          );
 
           // 사용자 정보 상태에 저장
           setUserData(response.data);

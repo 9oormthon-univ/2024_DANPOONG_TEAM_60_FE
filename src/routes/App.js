@@ -12,7 +12,6 @@ import SubHealth from '../components/Sub-component/SubHealth';
 import SubEducation from '../components/Sub-component/SubEducation';
 import SubUrgent from '../components/Sub-component/SubUrgent';
 import SubLive from '../components/Sub-component/SubLive';
-import Redirect from '../components/Login-component/KakaoRedirect';
 import LoginSuccess from '../components/Login-component/LoginSuccess';
 
 // nav
@@ -57,7 +56,7 @@ const App = () => {
         <Route path="/Chat" element={<Chat />} />
         <Route path="/boardwrite" element={<BoardWrite />} />
       </Routes>
-      <Nav/>
+      <Nav />
     </BrowserRouter>
   );
 };

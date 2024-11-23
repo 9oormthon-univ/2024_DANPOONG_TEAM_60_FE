@@ -52,36 +52,33 @@ const urgentLinks = [
 
 const SubUrgent = () => {
   return (
-    <>
-      <header>
-        <div className="sub-Header">
-          <Link to="/Main">
-            <div className="flex">
-              <img className="sub-Arrow" src={WhiteArrow} alt="icon" />
-              <div className="sub-MainTitle">긴급 지원</div>
-            </div>
-          </Link>
-        </div>
-      </header>
-      <main>
-        <div className="sub-Background">
-          {urgentLinks.map((link, index) => (
-            <div className="sub-Urgent__container" key={index}>
-              <a href={link.href} target="_blank" rel="noreferrer">
-                <div className="flex">
-                  <img
-                    className={`sub-Urgent__img ${link.className}`}
-                    src={link.imgSrc}
-                    alt={link.alt}
-                  />
-                  <p className="sub-Urgent__ContainTitle">{link.title}</p>
-                </div>
-              </a>
-            </div>
-          ))}
-        </div>
-      </main>
-    </>
+    <div className="sub-view-container">
+      <div className="sub-Header">
+        <Link to="/Main">
+          <div className="flex">
+            <img className="sub-Arrow" src={WhiteArrow} alt="icon" />
+            <div className="sub-MainTitle">긴급 지원</div>
+          </div>
+        </Link>
+      </div>
+
+      <div className="sub-Background">
+        {urgentLinks.map((link, index) => (
+          <div className="sub-Urgent__container" key={index}>
+            <a href={link.href} target="_blank" rel="noreferrer">
+              <div className="flex">
+                <img
+                  className={`sub-Urgent__img ${link.className}`}
+                  src={link.imgSrc}
+                  alt={link.alt}
+                />
+                <p className="sub-Urgent__ContainTitle">{link.title}</p>
+              </div>
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 
