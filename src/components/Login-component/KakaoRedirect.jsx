@@ -11,7 +11,7 @@ export function KakaoRedirect() {
   };
 
   useEffect(() => {
-    fetch(`보내줄 주소?code=${code}`, {
+    fetch(`?code=${code}`, {
       method: "POST",
       headers: headers,
     })

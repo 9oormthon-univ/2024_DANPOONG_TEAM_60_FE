@@ -1,61 +1,55 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const LoginSuccess = () => {
   const [userData, setUserData] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    // 액세스 토큰을 서버로부터 받아오는 함수 정의
-    const fetchAccessToken = async () => {
-      try {
-        // GET 요청을 보내고 응답에서 액세스 토큰을 body에서 추출
-        const response = await axios.get(
-          'http://44.212.10.165:8080/api/token',
-          {
-            withCredentials: false,
-          }
-        );
+    // URL에서 쿼리 파라미터로 전달된 액세스 토큰을 가져옴
+    const params = new URLSearchParams(window.location.search);
+    const accessToken = params.get('access_token');
 
-        // 응답 body에서 액세스 토큰 추출
-        const accessToken = response.access_token;
+    if (accessToken) {
+      // 로컬 스토리지에 액세스 토큰 저장
+      localStorage.setItem('access_token', accessToken);
 
-        if (accessToken) {
-          // 로컬 스토리지에 액세스 토큰 저장
-          localStorage.setItem('access_token', accessToken);
+      // 액세스 토큰을 사용하여 카카오 사용자 정보 API 호출
+      const fetchUserInfo = async () => {
+        try {
+          const response = await axios.get(
+            'https://kapi.kakao.com/v2/user/me',
+            {
+              headers: {
+                Authorization: `Bearer ${accessToken}`,
+              },
+            }
+          );
 
-          // 액세스 토큰 디코딩
-          const decodedToken = jwtDecode(accessToken);
-
-          // 디코딩된 토큰에서 사용자 정보 추출
-          const userInfo = {
-            id: decodedToken.sub,
-            name: decodedToken.name || '이름 없음', // name 필드가 없을 수 있으므로 기본값 설정
-            email: decodedToken.email || '이메일 없음', // email 필드가 없을 수 있으므로 기본값 설정
-          };
-
-          setUserData(userInfo);
-        } else {
-          // 액세스 토큰이 없으면 로그인 페이지로 이동
-          //window.location.href = '/login';
-          console.log('no token');
+          // 사용자 정보 상태에 저장
+          setUserData(response.data);
+          navigate('/Main');
+        } catch (error) {
+          console.error('Failed to fetch user info:', error);
+          // 사용자 정보를 불러올 수 없는 경우 로그인 페이지로 리다이렉트
+          //navigate('/login');
         }
-      } catch (error) {
-        console.error('Failed to fetch access token:', error);
-        //window.location.href = '/login';
-        console.log('err');
-      }
-    };
+      };
 
-    // 액세스 토큰을 받아오는 함수 호출
-    fetchAccessToken();
-  }, []);
+      fetchUserInfo();
+    } else {
+      // 액세스 토큰이 없는 경우 로그인 페이지로 리다이렉트
+      //navigate('/login');
+    }
+  }, [navigate]);
 
   return (
     <div>
       {userData ? (
         <>
-          <h1>환영합니다, {userData.name}님!</h1>
-          <p>이메일: {userData.email}</p>
+          <h1>환영합니다, {userData.properties?.nickname}님!</h1>
+          <p>이메일: {userData.kakao_account?.email || '이메일 없음'}</p>
         </>
       ) : (
         <p>로딩 중입니다...</p>

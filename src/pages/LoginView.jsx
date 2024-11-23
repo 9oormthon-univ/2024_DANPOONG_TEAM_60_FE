@@ -5,7 +5,7 @@ import loginBtn from '../assets/images/login/kakao_login_medium_narrow 1.png';
 const LoginView = () => {
 
   const handleLogin = () => {
-    window.location.href = 'http://44.212.10.165:8080/oauth2/authorization/kakao';
+    window.location.href = 'http://3.93.236.79:8080/oauth2/authorization/kakao';
   };
 
   return (

@@ -5,14 +5,15 @@
 }
 
 body, html, #root {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    font-family: 'SUIT';
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'SUIT';
+  overflow-y: scroll;
+  justify-content: center;
 }
 
 p {

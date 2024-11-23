@@ -47,7 +47,7 @@ const Board = () => {
     <div className="board-container">
       <div className="board-header">
         <img src={arrowleft} alt="arrowleft" className="header-left"></img>
-        <h2>게시판</h2>
+        <p>게시판</p>
       </div>
       {currentPosts.length > 0 ? (
         currentPosts.map((post) => (

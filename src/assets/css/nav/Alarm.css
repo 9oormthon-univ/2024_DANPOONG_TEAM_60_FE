@@ -5,15 +5,25 @@
 }
 
 body, html, #root {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  font-family: 'SUIT';
-  overflow-y: scroll;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'SUIT';
+    overflow-y: scroll;
+    justify-content: center;
+}
+
+.alarm-header p {
+    margin-left: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'SUIT';
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .alarm-container {
@@ -27,16 +37,20 @@ body, html, #root {
 }
 
 .alarm-header {
-    background-color: #265BCB;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #F2F6FD;
     width: 100%;
-    height: 9vh;
+    height: 10%;
+    border: 0;
 }
 
 .alarm-image {
-    width: 220px;
-    height: 220px;
+    width: 132px;
+    height: 149px;
     margin-top: 17vh;
-    margin-bottom: 12.5vh;
+    margin-bottom: 21.5vh;
 }
 
 .alarm-btn {
@@ -45,7 +59,9 @@ body, html, #root {
     background-color: #FAE100;
     border-radius: 32px;
     border: 0;
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
+    font-family: "SUIT";
+    font-weight: bold;
 }
 
 .alarm-info {
@@ -54,4 +70,19 @@ body, html, #root {
     font-size: 12px;
     text-align: start;
     white-space: nowrap;
+}
+
+.alarm-info-bottom {
+    width: 60%;
+    font-family: 'SUIT';
+    font-size: 12px;
+    text-align: start;
+    white-space: nowrap;
+    margin-left: 18px;
+}
+
+.arrow-left {
+    margin-left: 11px;
+    width: 34px;
+    height: 49px;
 }

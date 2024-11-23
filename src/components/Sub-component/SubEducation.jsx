@@ -60,7 +60,7 @@ const educationLinks = [
 
 const SubEducation = () => {
   return (
-    <>
+    <div className="beta">
       <header>
         <div className="sub-Header">
           <Link to="/Main">
@@ -89,7 +89,7 @@ const SubEducation = () => {
           ))}
         </div>
       </main>
-    </>
+    </div>
   );
 };
 

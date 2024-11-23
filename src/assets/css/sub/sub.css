@@ -8,10 +8,14 @@ html,
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: 'Nanum Gothic', sans-serif;
-  align-items: center;
+  font-family: 'SUIT';
+  overflow-y: scroll;
   justify-content: center;
-  background-color: white;
+}
+
+.beta {
+  height: 100%;
+  width: 100%;
 }
 
 /* 공용 서브 페이지 css */
@@ -119,12 +123,26 @@ html,
   margin-top: 10px;
 }
 
-.sub-healthTitle {
+.sub-healthNumber {
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
   color: black;
   margin-left: 30px;
+  margin-top: 24px;
+
+  font-family: 'SUIT', sans-serif;
+}
+
+.sub-healthTitle {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  margin-left: 60px;
+  margin-top: -25px;
+
+  font-family: 'SUIT', sans-serif;
 }
 
 .sub-healthDesc {
@@ -133,5 +151,7 @@ html,
   text-decoration: none;
   color: black;
   margin-left: 60px;
-  margin-top: 2px;
+  margin-top: -1px;
+
+  font-family: 'SUIT', sans-serif;
 }
