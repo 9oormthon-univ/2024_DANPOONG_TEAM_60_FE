@@ -32,6 +32,7 @@ html,
   color: white;
   height: 64px;
   width: 100vw;
+  max-width: 450px;
 }
 
 .sub-Arrow {
@@ -42,6 +43,7 @@ html,
   background-color: yellow;
   height: 205px;
   width: 86vw;
+  max-width: 387px;
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 30px;
@@ -99,42 +101,46 @@ html,
 
 .sub-Welfare__container {
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
+  box-shadow: 2px 2px 6px;
   width: 90vw;
   height: 82px;
   border-radius: 20px;
   margin: 0 auto;
   margin-top: 60px;
+  max-width: 405px;
 }
 
 .sub-Live__container {
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
+  box-shadow: 2px 2px 6px;
   width: 90vw;
   height: 82px;
   border-radius: 20px;
   margin: 0 auto;
   margin-top: 32px;
+  max-width: 405px;
 }
 
 .sub-Urgent__container {
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
+  box-shadow: 2px 2px 6px;
   width: 90vw;
   height: 66px;
   border-radius: 20px;
   margin: 0 auto;
   margin-top: 32px;
+  max-width: 405px;
 }
 
 .sub-Education__container {
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
+  box-shadow: 2px 2px 6px;
   width: 90vw;
   height: 66px;
   border-radius: 20px;
   margin: 0 auto;
   margin-top: 32px;
+  max-width: 405px;
 }
 
 .sub-educationTitle {
@@ -162,12 +168,13 @@ html,
 
 .sub-health__container {
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
+  box-shadow: 2px 2px 6px;
   width: 86vw;
   height: 74px;
   border-radius: 20px;
   margin: 0 auto;
   margin-top: 20px;
+  max-width: 405px;
 }
 
 .sub-healthNumber {

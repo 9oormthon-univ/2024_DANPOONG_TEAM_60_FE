@@ -16,6 +16,10 @@ body, html, #root {
   justify-content: center;
 }
 
+.board-arrow-left {
+  margin-left: 11px;
+}
+
 .board-container {
   display: flex;
   flex-direction: column;
@@ -35,7 +39,7 @@ body, html, #root {
   height: 71px;
   width: 100vw;
   max-width: 450px;
-  padding: 0 16px;
+  padding: 0;
 }
 
 .board-header p {
@@ -88,23 +92,25 @@ body, html, #root {
 }
 
 .write-button {
-  position: fixed;
-  bottom: 80px; /* 화면 하단에서 20px 위 */
-  right: 25px;  /* 화면 오른쪽에서 20px 왼쪽 */
-  background-color: #265bcb;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 24px;
+  background-color: white;
+  border: 1px solid #265BCB;
+  border-radius: 37px;
+  width: 86px;
+  height: 37px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: 50vw;
+  margin-top: 68vh;
 }
 
 .write-button:hover {
   background-color: #1e4ca1;
+}
+
+.write-text {
+  color: black;
+  font-size: 10px;
+  margin: 0;
 }
