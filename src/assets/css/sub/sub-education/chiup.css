@@ -1,0 +1,53 @@
+/* img */
+
+.chiup-korean-image {
+  position: absolute;
+  top: -2px;
+  left: 10px;
+
+  height: 36px;
+  width: 37px;
+}
+
+.chiup-janhak-image {
+  position: absolute;
+  top: -2px;
+  left: 8px;
+
+  height: 30px;
+  width: 42px;
+}
+
+.chiup-gujik-image {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  height: 21px;
+  width: 62px;
+}
+
+/* 컴포넌트 */
+
+.sub-chiup__container {
+  display: flex;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
+  width: 90vw;
+  height: 64px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 32px;
+
+  position: relative;
+}
+
+.sub-chiup__img {
+  padding-top: 16px;
+  padding-left: 20px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}

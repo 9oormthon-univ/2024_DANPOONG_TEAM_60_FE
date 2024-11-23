@@ -1,0 +1,52 @@
+/* 복지 지원 이미지 */
+
+.korean-image {
+  position: absolute;
+  top: 4px;
+}
+
+.bockJiRo-image {
+  position: absolute;
+  top: 4px;
+}
+
+.janHak-image {
+  position: absolute;
+  top: 6px;
+}
+
+/* 컴포넌트 */
+
+.sub-Welfare__container {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
+  width: 90vw;
+  height: 82px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 32px;
+
+  position: relative;
+}
+
+.sub-Welfare__ContainTitle {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  margin-left: 50px;
+  margin-top: 36px;
+  white-space: pre-wrap; /* \n 줄바꿈 */
+
+  position: relative;
+  left: 80px;
+
+  font-family: 'SUIT', sans-serif;
+}
+
+.sub-Welfare__img {
+  padding-top: 14px;
+  padding-left: 20px;
+
+  position: absolute;
+}

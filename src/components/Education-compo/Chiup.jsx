@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../assets/css/sub/sub.css';
+import '../../assets/css/sub/sub-education/chiup.css';
 
 // img
 import WhiteArrow from '../../assets/images/sub/WhiteArrow.png';
@@ -17,18 +18,21 @@ const chiupLinks = [
     imgSrc: korean,
     alt: '국가보훈대상자 취업능력개발지원',
     title: '국가보훈대상자 취업능력개발지원',
+    className: 'chiup-korean-image', // 고유 클래스
   },
   {
     href: 'https://www.kosaf.go.kr/ko/tuition.do?pg=tuition05_01_01',
     imgSrc: JanHak,
     alt: '취업 후 상환 학자금대출',
     title: '취업 후 상환 학자금대출',
+    className: 'chiup-janhak-image', // 고유 클래스
   },
   {
     href: 'https://www.gyeongnam.go.kr/mydata/',
     imgSrc: Gujik,
     alt: '청년구직활동수당 지원사업',
     title: '청년구직활동수당 지원사업',
+    className: 'chiup-gujik-image', // 고유 클래스
   },
 ];
 
@@ -48,10 +52,14 @@ const Chiup = () => {
       <main>
         <div className="sub-Background">
           {chiupLinks.map((link, index) => (
-            <div className="sub-Education__container" key={index}>
+            <div className="sub-chiup__container" key={index}>
               <a href={link.href} target="_blank" rel="noreferrer">
                 <div className="flex">
-                  <img className="sub-img" src={link.imgSrc} alt={link.alt} />
+                  <img
+                    className={`sub-chiup__img ${link.className}`}
+                    src={link.imgSrc}
+                    alt={link.alt}
+                  />
                   <p className="sub-educationTitle">{link.title}</p>
                 </div>
               </a>

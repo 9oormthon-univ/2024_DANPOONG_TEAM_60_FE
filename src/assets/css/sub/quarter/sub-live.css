@@ -1,0 +1,71 @@
+/* 생활비 절감 이미지 */
+
+.wifi-image {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+}
+
+.geupsik-image {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+}
+
+.seoul-image {
+  position: absolute;
+  top: 20px;
+  left: 2px;
+}
+
+.gake-image {
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+.nanume-image {
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+/* 컴포넌트 */
+
+.sub-Live__container {
+  display: flex;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
+  width: 90vw;
+  height: 82px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 32px;
+
+  position: relative;
+}
+
+.sub-Live__img {
+  padding-top: 16px;
+  padding-left: 20px;
+
+  position: absolute;
+}
+
+.sub-Live__ContainTitle {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  margin-left: 50px;
+  margin-top: 36px;
+  white-space: pre-wrap; /* \n 줄바꿈 */
+
+  position: relative;
+  left: 80px;
+
+  display: flex;
+  align-items: center;
+
+  font-family: 'SUIT', sans-serif;
+}

@@ -1,0 +1,55 @@
+/* 교육 지원 이미지 */
+
+.school-image {
+  height: 50px;
+  width: 50px;
+
+  position: absolute;
+  left: -4px;
+}
+
+.han-image {
+  position: absolute;
+  left: 10px;
+}
+
+.jungbo-image {
+  position: absolute;
+  left: 6px;
+}
+
+/* 컴포넌트 */
+
+.sub-Education__container {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
+  width: 90vw;
+  height: 66px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 32px;
+
+  position: relative;
+}
+
+.sub-Education__img {
+  padding-top: 14px;
+  padding-left: 28px;
+
+  position: absolute;
+}
+
+.sub-Education__ContainTitle {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  margin-left: 50px;
+  margin-top: 28px;
+  white-space: pre-wrap; /* \n 줄바꿈 */
+
+  position: relative;
+  left: 80px;
+
+  font-family: 'SUIT', sans-serif;
+}
