@@ -40,11 +40,15 @@ const Alarm = () => {
     }
   };
 
+  const handleBackClick = () => {
+    window.history.back();
+  };
+
   return (
     <div className="view-container">
       <div className="alarm-container">
       <div className="alarm-header">
-        <img src={arrowLeft} alt="arrow-left" className="arrow-left" /> 
+        <img src={arrowLeft} alt="arrow-left" className="arrow-left" onClick={handleBackClick} /> 
         <p>돌아가기</p>
       </div>
         <img src={alarm} alt="alarm" className="alarm-image" />
