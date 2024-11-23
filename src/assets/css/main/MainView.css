@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "SUIT";
+    font-weight: normal;
+    src: url("../../font/SUIT-Regular.ttf") format("truetype");
+}
+
 body, html, #root {
     display: flex;
     flex-direction: column;
@@ -5,13 +11,13 @@ body, html, #root {
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Nanum Gothic', sans-serif;
-    align-items: center;
-  }
+    font-family: 'SUIT';
+    justify-content: center;
+}
   
-  .view-container {
-      background-color: #265BCB;
-      height: 100%;
-      width: 100%;
-      max-width: 450px;
-  }
+.view-container {
+    background-color: #265BCB;
+    height: 100%;
+    width: 100%;
+    max-width: 450px;
+}

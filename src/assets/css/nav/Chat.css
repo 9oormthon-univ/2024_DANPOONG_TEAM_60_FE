@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "SUIT";
+    font-weight: normal;
+    src: url("../../font/SUIT-Regular.ttf") format("truetype");
+}
+
+body, html, #root {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'SUIT';
+  overflow-y: scroll;
+  justify-content: center;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    background-color: #F2F6FD;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #F2F6FD;
+    width: 100%;
+    height: 10%;
+    border-radius: 13px;
+}
+
+.chat-header-text {
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.chat-image {
+    width: 184px;
+    height: 184px;
+    margin-top: 17vh;
+    margin-bottom: 12.5vh;
+}
+
+.chat-btn {
+    width: 70%;
+    height: 58px;
+    background-color: #FAE100;
+    border-radius: 32px;
+    border: 0;
+    margin-bottom: 39px;
+}
+
+.chat-info {
+    width: 60%;
+    font-family: 'SUIT';
+    font-size: 10px;
+    text-align: start;
+}

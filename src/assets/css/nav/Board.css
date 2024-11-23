@@ -1,0 +1,62 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Gothic', sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 450px;
+  background-color: #c7d9f7;
+}
+
+.board-header {
+  background-color: #265BCB;
+  width: 100%;
+  height: 10%;
+  border-radius: 13px;
+}
+
+.board-content {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  margin-top: 3vh  ;
+}
+
+.board-content-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.board-content-text {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: #444444;
+}
+
+.reaction {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.reaction-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.reaction-icon {
+  width: 20px;
+  height: 20px;
+}

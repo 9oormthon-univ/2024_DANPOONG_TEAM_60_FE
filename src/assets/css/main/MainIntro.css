@@ -1,16 +1,23 @@
+@font-face {
+  font-family: "SUIT";
+  font-weight: normal;
+  src: url("../../font/SUIT-Regular.ttf") format("truetype");
+}
+
 .intro-container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 450px;
-  background-color: #c7d9f7;
+  background-color: #F2F6FD;
   padding: 0%;
   text-align: left;
   justify-content: start;
 }
 
 .intro-text {
-  font-weight: bold;
-  font-size: 15px;
+  font-weight:600;
+  font-size: 18px;
+  font-family: 'SUIT';
+  line-height: 28px;
   color: #000;
 }

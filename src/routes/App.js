@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainView from '../pages/main/MainView';
 import LoadingView from '../pages/main/LoadingView';
 import Login from '../pages/LoginView';
+import Nav from '../components/Navbar';
 
 // sub
 import SubWelfare from '../components/Sub-component/SubWelfare';
@@ -12,6 +13,12 @@ import SubEducation from '../components/Sub-component/SubEducation';
 import SubUrgent from '../components/Sub-component/SubUrgent';
 import SubLive from '../components/Sub-component/SubLive';
 import Redirect from '../components/Login-component/KakaoRedirect';
+import LoginSuccess from '../components/Login-component/LoginSuccess';
+
+// nav
+import Alarm from '../components/Nav-components/Alarm';
+import Board from '../components/Nav-components/Board';
+import Chat from '../components/Nav-components/Chat';
 
 // edu
 import Chiup from '../components/Education-compo/Chiup';
@@ -28,12 +35,14 @@ const App = () => {
         <Route path="/" element={<LoadingView />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Main" element={<MainView />} />
-        <Route path="/auth" element={<Redirect />}/>
+        <Route path="/loginsuccess" element={<LoginSuccess />} />
+
         <Route path="/SubWelfare" element={<SubWelfare />} />
         <Route path="/SubHealth" element={<SubHealth />} />
         <Route path="/SubEducation" element={<SubEducation />} />
         <Route path="/SubUrgent" element={<SubUrgent />} />
         <Route path="/SubLive" element={<SubLive />} />
+
         {/* education */}
         <Route path="/Chiup" element={<Chiup />} />
         <Route path="/School" element={<School />} />
@@ -41,7 +50,12 @@ const App = () => {
         <Route path="/Jangae" element={<Jangae />} />
         <Route path="/Jungbo" element={<Jungbo />} />
         <Route path="/Out" element={<Out />} />
+
+        <Route path="/Alarm" element={<Alarm />} />
+        <Route path="/Board" element={<Board />} />
+        <Route path="/Chat" element={<Chat />} />
       </Routes>
+      <Nav/>
     </BrowserRouter>
   );
 };

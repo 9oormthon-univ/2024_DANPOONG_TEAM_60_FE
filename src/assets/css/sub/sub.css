@@ -10,8 +10,8 @@ html,
   width: 100%;
   font-family: 'Nanum Gothic', sans-serif;
   align-items: center;
-
-  background-color: #f2f6fd;
+  justify-content: center;
+  background-color: white;
 }
 
 /* 공용 서브 페이지 css */

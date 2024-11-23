@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "SUIT";
+  font-weight: normal;
+  src: url("../../font/SUIT-Regular.ttf") format("truetype");
+}
+
 body, html, #root {
   display: flex;
   flex-direction: column;
@@ -5,9 +11,9 @@ body, html, #root {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: 'Nanum Gothic', sans-serif;
-  align-items: center;
-  overflow-y: scroll
+  font-family: 'SUIT';
+  justify-content: center;
+  overflow-y: scroll;
 }
 
 .empty-space {
@@ -18,8 +24,8 @@ body, html, #root {
 .main {
   display: flex;
   flex-direction: column;
-  background-color: #c7d9f7;
-  height: 900px; /*877px*/
+  background-color: #F2F6FD;
+  height: 935px; /*877px*/
   width: 100%;
   max-width: 450px;
   border-top-left-radius: 47px;
@@ -33,5 +39,5 @@ body, html, #root {
   height: 100%;
   max-width: 405px;
   align-items: start;
-  margin-top: 54px;
+  margin-top: 40px;
 }
