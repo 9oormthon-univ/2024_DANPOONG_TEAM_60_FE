@@ -15,6 +15,14 @@ html,
 
 /* 공용 서브 페이지 css */
 
+.sub-view-container {
+  background-color: #f2f6fd;
+  height: 100%;
+  width: 100%;
+  max-width: 450px;
+}
+
+
 .sub-Header {
   background-color: #265bcb;
   color: white;
@@ -47,8 +55,8 @@ html,
 
 .sub-Background {
   background-color: #f2f6fd;
-  height: 100vh;
-  width: 100vw;
+  height: 900px;
+  width: 100%;
 }
 
 .flex {
@@ -86,7 +94,7 @@ html,
   height: 82px;
   border-radius: 20px;
   margin: 0 auto;
-  margin-top: 32px;
+  margin-top: 60px;
 }
 
 .sub-Live__container {
