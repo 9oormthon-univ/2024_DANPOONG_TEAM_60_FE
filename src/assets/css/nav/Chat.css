@@ -5,15 +5,15 @@
 }
 
 body, html, #root {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  font-family: 'SUIT';
-  overflow-y: scroll;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'SUIT';
+    overflow-y: scroll;
+    justify-content: center;
 }
 
 .chat-container {
@@ -36,8 +36,17 @@ body, html, #root {
     border-radius: 13px;
 }
 
+.chat-arrow-left {
+    margin-left: 11px;
+    width: 34px;
+    height: 49px;
+}
+
 .chat-header-text {
-    margin-left: 10%;
+    margin-left: 12px;
+    font-family: 'SUIT';
+    font-size: 17px;
+    font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -45,17 +54,19 @@ body, html, #root {
 .chat-image {
     width: 184px;
     height: 184px;
-    margin-top: 17vh;
+    margin-top: 20vh;
     margin-bottom: 12.5vh;
 }
 
 .chat-btn {
-    width: 70%;
+    width: 60%;
     height: 58px;
     background-color: #FAE100;
     border-radius: 32px;
     border: 0;
     margin-bottom: 39px;
+    font-family: 'SUIT';
+    font-weight: bold;
 }
 
 .chat-info {
