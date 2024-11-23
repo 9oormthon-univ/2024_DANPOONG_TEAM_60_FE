@@ -13,6 +13,7 @@ body, html, #root {
   width: 100%;
   font-family: 'SUIT';
   align-items: center;
+  justify-content: center;
 }
 
 @font-face {

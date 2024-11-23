@@ -16,42 +16,51 @@ body, html, #root {
   justify-content: center;
 }
 
-.alarm-container {
+.chat-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
     max-width: 450px;
-    background-color: hsl(218, 73%, 97%);
+    background-color: #F2F6FD;
 }
 
-.alarm-header {
-    background-color: #265BCB;
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #F2F6FD;
     width: 100%;
-    height: 9vh;
+    height: 10%;
+    border-radius: 13px;
 }
 
-.alarm-image {
-    width: 220px;
-    height: 220px;
+.chat-header-text {
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.chat-image {
+    width: 184px;
+    height: 184px;
     margin-top: 17vh;
     margin-bottom: 12.5vh;
 }
 
-.alarm-btn {
+.chat-btn {
     width: 70%;
     height: 58px;
     background-color: #FAE100;
     border-radius: 32px;
     border: 0;
-    margin-bottom: 5vh;
+    margin-bottom: 39px;
 }
 
-.alarm-info {
+.chat-info {
     width: 60%;
     font-family: 'SUIT';
-    font-size: 12px;
+    font-size: 10px;
     text-align: start;
-    white-space: nowrap;
 }

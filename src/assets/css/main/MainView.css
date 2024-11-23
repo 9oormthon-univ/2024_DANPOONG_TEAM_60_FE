@@ -11,9 +11,8 @@ body, html, #root {
     padding: 0;
     height: 100%;
     width: 100%;
-    max-width: 450px;
     font-family: 'SUIT';
-    align-items: center;
+    justify-content: center;
 }
   
 .view-container {

@@ -15,7 +15,8 @@ const MainWelfare = () => {
         </div>
         <div className='text-container'>
           <div className='title'>복지 지원</div>
-          <div className='content'>본인의 연령, 가족 구성, 소득 수준에 맞는 정부 및 민간 지원 혜택을 추천합니다.</div>
+          <div className='content'>본인의 연령, 가족 구성, 소득 수준에 맞는</div>
+          <div className='content'>정부 및 민간 지원 혜택을 추천합니다.</div>
         </div>
         <img src={arrow} alt='arrow' className='arrow-icon-img' />
       </Link>

@@ -13,6 +13,7 @@ body, html, #root {
     width: 100%;
     font-family: 'SUIT';
     align-items: center;
+    justify-content: center;
 }
 
 p {
@@ -82,7 +83,7 @@ p {
 .title {
     font-size: 12px;
     font-weight: bold;
-    font-family: 'Inter', sans-serif;
+    font-family: 'SUIT';
     margin-bottom: 12px;
     color: black;
 }
@@ -90,8 +91,9 @@ p {
 .content {
     font-size: 9px;
     font-weight: 400;
-    font-family: 'Inter', sans-serif;
+    font-family: 'SUIT';
     color: black;
+    margin-bottom: 2px;
 }
 
 a {

@@ -10,8 +10,10 @@ body, html, #root {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
   font-family: 'SUIT';
   align-items: center;
+  justify-content: center;
 }
 
 @font-face {
@@ -37,8 +39,8 @@ body, html, #root {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top: 234px;
-  margin-bottom: 131px;
+  margin-top: 33vh;
+  margin-bottom: 27vh;
 }
 
 .subtext {
@@ -47,7 +49,7 @@ body, html, #root {
   color: #0670EF;
   margin-top: 0;
   margin-bottom: 12.5px;
-  text-align: center;
+  text-align: left;
   line-height: 9.68px;
   margin-left: 0;
 }
@@ -57,13 +59,8 @@ body, html, #root {
   justify-content: center;
   align-items: center;
   font-family: "Allimjang";
-  font-size: 35px;
+  font-size: 45px;
   color: #0670EF;
-}
-
-.main-text-image {
-  width: 36px;
-  height: auto;
 }
 
 .login-button {
@@ -77,7 +74,7 @@ body, html, #root {
 }
 
 .btnImg {
-  width: 90px;
+  width: 183px;
   height: 45px;
 }
 

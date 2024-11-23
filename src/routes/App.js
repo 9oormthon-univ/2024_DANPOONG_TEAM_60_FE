@@ -18,6 +18,7 @@ import LoginSuccess from '../components/Login-component/LoginSuccess';
 // nav
 import Alarm from '../components/Nav-components/Alarm';
 import Board from '../components/Nav-components/Board';
+import Chat from '../components/Nav-components/Chat';
 
 // edu
 import Chiup from '../components/Education-compo/Chiup';
@@ -50,8 +51,9 @@ const App = () => {
         <Route path="/Jungbo" element={<Jungbo />} />
         <Route path="/Out" element={<Out />} />
 
-        <Route path="Alarm" element={<Alarm />} />
-        <Route path="Board" element={<Board />} />
+        <Route path="/Alarm" element={<Alarm />} />
+        <Route path="/Board" element={<Board />} />
+        <Route path="/Chat" element={<Chat />} />
       </Routes>
       <Nav/>
     </BrowserRouter>

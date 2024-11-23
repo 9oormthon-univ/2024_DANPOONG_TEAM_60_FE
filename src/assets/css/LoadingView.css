@@ -1,4 +1,5 @@
 body, html, #root {
+  display: flex;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -30,13 +31,13 @@ body, html, #root {
 }
 
 .animated-letter {
-  font-size: 35px;
+  font-size: 45px;
   font-family: 'Allimjang';
   color: white;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1.5s forwards;
-  margin-top: 256.18px;
+  margin-top: 35.5vh;
 }
 
 @keyframes fadeInUp {

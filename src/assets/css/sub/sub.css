@@ -10,7 +10,7 @@ html,
   width: 100%;
   font-family: 'Nanum Gothic', sans-serif;
   align-items: center;
-
+  justify-content: center;
   background-color: white;
 }
 

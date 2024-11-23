@@ -15,7 +15,8 @@ const MainUrgent = () => {
         </div>
         <div className='text-container'>
           <div className='title'>긴급 지원</div>
-          <div className='content'>알림을 통해 위기 상황에 대한 대처 방법을 알림으로 전달합니다.</div>
+          <div className='content'>알림을 통해 위기 상황에 대한</div>
+          <div className='content'>대처 방법을 알림으로 전달합니다.</div>
         </div>
         <img src={arrow} alt='arrow' className='arrow-icon-img' />
       </Link>
