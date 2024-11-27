@@ -1,7 +1,10 @@
 // 서브페이지 - 긴급 지원
-import React from 'react';
+import React, { useState } from 'react';
 import '../../assets/css/sub/sub.css';
 import '../../assets/css/sub/quarter/sub-urgent.css';
+
+// youtube 라이브러리
+import YouTube from 'react-youtube';
 
 // img
 import WhiteArrow from '../../assets/images/sub/WhiteArrow.png';
@@ -21,18 +24,24 @@ const urgentLinks = [
     imgSrc: korean,
     alt: '긴급복지지원',
     title: '긴급복지지원',
+    explan: '',
+    video: '',
   },
   {
     href: 'https://www.kamco.or.kr/portal/contents.do?mId=0202010000',
     imgSrc: Kamko,
     alt: '캠코 한국자산관리공사',
     title: '캠코 한국자산관리공사',
+    explan: '',
+    video: '',
   },
   {
     href: 'https://www.hf.go.kr/ko/sub02/sub01_09_03_02.do',
     imgSrc: Jutak,
     alt: '한국주택금융공사',
     title: '한국주택금융공사',
+    explan: '',
+    video: '',
     className: 'jutak-image', // 고유 클래스
   },
   {
@@ -40,17 +49,31 @@ const urgentLinks = [
     imgSrc: BockJiRo,
     alt: '복지로',
     title: '복지로',
+    explan: '',
+    video: '',
   },
   {
     href: 'https://housing.gg.go.kr/html/24202.do',
     imgSrc: GeongKi,
     alt: '경기주거복지포털',
     title: '경기주거복지포털',
+    explan: '',
+    video: '',
     className: 'geongKi-image', // 고유 클래스
   },
 ];
 
 const SubUrgent = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleDropdown = (index) => {
+    if (openIndex === index) {
+      setOpenIndex(null); // 닫기
+    } else {
+      setOpenIndex(index); // 열기
+    }
+  };
+
   return (
     <div className="sub-view-container">
       <div className="sub-Header">
@@ -75,6 +98,27 @@ const SubUrgent = () => {
                 <p className="sub-Urgent__ContainTitle">{link.title}</p>
               </div>
             </a>
+            <button
+              className="dropdown-button-small"
+              onClick={() => {
+                toggleDropdown(index);
+              }}
+            >
+              {openIndex === index ? '닫기' : '더보기'}
+            </button>
+            {openIndex === index && (
+              <div className="dropdown-content">
+                {link.explan}
+                <YouTube
+                  className="youtube"
+                  videoId={link.video}
+                  opts={{
+                    width: '334px',
+                    height: '316px',
+                  }}
+                />
+              </div>
+            )}
           </div>
         ))}
       </div>
