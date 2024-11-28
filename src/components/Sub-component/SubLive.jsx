@@ -1,7 +1,10 @@
 // 서브페이지 - 생활비 절감 지원
-import React from 'react';
+import React, { useState } from 'react';
 import '../../assets/css/sub/sub.css';
 import '../../assets/css/sub/quarter/sub-live.css';
+
+// youtube 라이브러리
+import YouTube from 'react-youtube';
 
 // img
 import WhiteArrow from '../../assets/images/sub/WhiteArrow.png';
@@ -54,6 +57,16 @@ const liveLinks = [
 ];
 
 const SubLive = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleDropdown = (index) => {
+    if (openIndex === index) {
+      setOpenIndex(null); // 닫기
+    } else {
+      setOpenIndex(index); // 열기
+    }
+  };
+
   return (
     <div className="sub-view-container">
       <div className="sub-Header">
@@ -64,6 +77,7 @@ const SubLive = () => {
           </div>
         </Link>
       </div>
+
       <div className="sub-Background">
         {liveLinks.map((link, index) => (
           <div className="sub-Live__container" key={index}>
@@ -77,6 +91,27 @@ const SubLive = () => {
                 <p className="sub-Live__ContainTitle">{link.title}</p>
               </div>
             </a>
+            <button
+              className="dropdown-button"
+              onClick={() => {
+                toggleDropdown(index);
+              }}
+            >
+              {openIndex === index ? '닫기' : '더보기'}
+            </button>
+            {openIndex === index && (
+              <div className="dropdown-content">
+                {link.explan}
+                <YouTube
+                  className="youtube"
+                  videoId={link.video}
+                  opts={{
+                    width: '334px',
+                    height: '316px',
+                  }}
+                />
+              </div>
+            )}
           </div>
         ))}
       </div>
