@@ -47,12 +47,17 @@
 
 /* 컴포넌트 */
 
+.sub-school-Background {
+  background-color: #f2f6fd;
+  height: 1100px;
+  width: 100%;
+}
+
 .sub-school__container {
-  display: flex;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
   width: 90vw;
-  height: 64px;
+  height: 68px;
   border-radius: 20px;
   margin: 0 auto;
   margin-top: 32px;
@@ -68,4 +73,22 @@
 
   display: flex;
   align-items: center;
+}
+
+.naJu-button {
+  font-family: 'SUIT';
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+  background-color: #265bcb;
+  border-radius: 10px;
+  width: 16%;
+  height: 22px;
+  cursor: pointer;
+  margin-left: 78%;
+  max-width: 450px;
+
+  position: relative;
+  top: -14px;
 }

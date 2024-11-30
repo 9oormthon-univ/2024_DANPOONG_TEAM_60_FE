@@ -236,10 +236,6 @@ html,
   font-family: 'SUIT', sans-serif;
 
   line-height: 15px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* map - health */
