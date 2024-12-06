@@ -22,8 +22,6 @@ const app = initializeApp(firebaseConfig);
 const messaging = getMessaging(app);
 console.log("기초 설정 완료");
 
-
-
 export async function handleAllowNotification() {
     registerServiceWorker();
     try {
@@ -34,9 +32,10 @@ export async function handleAllowNotification() {
                 vapidKey: "BHXRXqhiFaBr2OZC4qTQz7t_qGJc6m6NuxtWku4Xpw_fCZYvz_uiNVq2dlDzEP7VMHsjaxPJmCIPduCfBgaxemk"
             });
             if (token) {
+                const link = "/notifications/add-token?token="+token+"&type=web";
                 console.log("토큰", token);
                 console.log("http://3.93.236.79:8080/notifications/add-token?token="+token+"&type=web");
-                axios.get("http://3.93.236.79:8080/notifications/add-token?token="+token+"&type=web", {withCredentials:false});
+                axios.get(link, {withCredentials:false});
             } else {
                 alert(
                     "토큰 등록이 불가능 합니다. 생성하려면 권한을 허용해주세요"

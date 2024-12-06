@@ -9,9 +9,86 @@ html,
   height: 100%;
   width: 100%;
   font-family: 'SUIT';
-  overflow-y: scroll;
   justify-content: center;
 }
+
+.youtube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Dropdown 스타일 */
+.dropdown-button {
+  font-family: 'SUIT';
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+  background-color: #265bcb;
+  border-radius: 10px;
+  width: 16%;
+  height: 22px;
+  cursor: pointer;
+  margin-left: 78%;
+  max-width: 450px;
+
+  position: relative;
+  top: -8px;
+}
+
+.dropdown-button-small {
+  font-family: 'SUIT';
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+  background-color: #265bcb;
+  border-radius: 10px;
+  width: 16%;
+  height: 22px;
+  cursor: pointer;
+  margin-left: 78%;
+  max-width: 450px;
+
+  position: relative;
+  top: -14px;
+}
+
+.dropdown-content {
+  text-align: start;
+  letter-spacing: 95%;
+  line-height: 27px;
+  font-size: 15px;
+  font-family: 'SUIT';
+  background-color: white;
+  border: 0.5px solid #265bcb;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  animation: slideDown 0.3s ease-out;
+  position: relative;
+  z-index: 100;
+}
+
+/* 드롭다운 애니메이션 */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/**/
 
 .beta {
   height: 100%;
@@ -158,10 +235,6 @@ html,
   font-family: 'SUIT', sans-serif;
 
   line-height: 15px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* map - health */
@@ -175,6 +248,7 @@ html,
   margin: 0 auto;
   margin-top: 20px;
   max-width: 405px;
+  cursor: pointer;
 }
 
 .sub-healthNumber {

@@ -8,7 +8,7 @@ import arrow from '../../assets/images/main/arrow_icon.png';
 const MainLive = () => {
   return (
     <div className='welfare-container'>
-      <p>본인에게 맞는 생활비 절감 지원을 찾아보세요.</p>
+      <p>생활비 절감 지원을 찾아보세요.</p>
       <Link className='btn-container' to='/SubLive'>
         <div className='icon-container'>
           <img src={live} alt='live' className='live-icon-img' />

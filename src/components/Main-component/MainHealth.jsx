@@ -8,7 +8,7 @@ import arrow from '../../assets/images/main/arrow_icon.png';
 const MainHealth = () => {
   return (
     <div className='welfare-container'>
-      <p>본인에게 맞는 건강 지원을 찾아보세요.</p>
+      <p>필요한 건강 지원을 찾아보세요.</p>
       <Link className='btn-container' to='/SubHealth'>
         <div className='icon-container'>
           <img src={health} alt='health' className='health-icon-img' />
