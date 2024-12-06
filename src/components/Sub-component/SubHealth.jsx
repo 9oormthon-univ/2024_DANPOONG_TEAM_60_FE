@@ -15,7 +15,7 @@ const healthLinks = [
   {
     number: '01.',
 
-    title: '무료 진료소',
+    title: '라파엘 센터',
     desc: '서울특별시 성북구 창경궁로43길 7',
     latitude: 37.588272100000204, // 위도
     longitude: 127.00016769999957, // 경도
@@ -23,7 +23,7 @@ const healthLinks = [
   {
     number: '02.',
 
-    title: '무료 진료소',
+    title: '천사 병원',
     desc: '서울특별시 동대문구 서울시립대로 57',
     latitude: 37.57658010000022, // 위도
     longitude: 127.0435382, // 경도
@@ -31,7 +31,7 @@ const healthLinks = [
   {
     number: '03.',
 
-    title: '무료 진료소',
+    title: '중구 무료 진료소',
     desc: '서울 중구 남창동 190-22',
     latitude: 37.55723689999997, // 위도
     longitude: 126.97799809999948, // 경도
@@ -39,7 +39,7 @@ const healthLinks = [
   {
     number: '04.',
 
-    title: '보건소',
+    title: '강남구 보건소',
     desc: '서울특별시 강남구 선릉로 668',
     latitude: 37.51632219999968, // 위도
     longitude: 127.03795959999945, // 경도
@@ -47,7 +47,7 @@ const healthLinks = [
   {
     number: '05.',
 
-    title: '보건소',
+    title: '강동구 보건소',
     desc: '서울특별시 강동구 성내로 45 (성내동)',
     latitude: 37.52925939999966, // 위도
     longitude: 127.12137389999967, // 경도
@@ -55,7 +55,7 @@ const healthLinks = [
   {
     number: '06.',
 
-    title: '보건소',
+    title: '강북구 보건소',
     desc: '서울특별시 강북구 한천로 897 (번동) 232',
     latitude: 37.632217899999944, // 위도
     longitude: 127.03440719999942, // 경도
@@ -63,7 +63,7 @@ const healthLinks = [
   {
     number: '07.',
 
-    title: '보건소',
+    title: '동작구 보건소',
     desc: '서울특별시 동작구 장승배기로10길 42 (상도동)',
     latitude: 37.50439009999988, // 위도
     longitude: 126.93692549999996, // 경도

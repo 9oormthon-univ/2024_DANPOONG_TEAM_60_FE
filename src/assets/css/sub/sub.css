@@ -249,6 +249,7 @@ html,
   margin: 0 auto;
   margin-top: 20px;
   max-width: 405px;
+  cursor: pointer;
 }
 
 .sub-healthNumber {
