@@ -30,7 +30,6 @@
 /* 컴포넌트 */
 
 .sub-jangae__container {
-  display: flex;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* #3 */
   width: 90vw;
@@ -50,4 +49,58 @@
 
   display: flex;
   align-items: center;
+}
+
+.miral-button {
+  font-family: 'SUIT';
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+  background-color: #265bcb;
+  border-radius: 10px;
+  width: 16%;
+  height: 22px;
+  cursor: pointer;
+  margin-left: 78%;
+  max-width: 450px;
+
+  position: relative;
+  top: -6px;
+}
+
+.aeud-button {
+  font-family: 'SUIT';
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+  background-color: #265bcb;
+  border-radius: 10px;
+  width: 16%;
+  height: 22px;
+  cursor: pointer;
+  margin-left: 78%;
+  max-width: 450px;
+
+  position: relative;
+  top: -6px;
+}
+
+.aeud-button {
+  font-family: 'SUIT';
+  font-size: 10px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid white;
+  background-color: #265bcb;
+  border-radius: 10px;
+  width: 16%;
+  height: 22px;
+  cursor: pointer;
+  margin-left: 78%;
+  max-width: 450px;
+
+  position: relative;
+  top: -8px;
 }
