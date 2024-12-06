@@ -31,7 +31,7 @@ const outLinks = [
     href: 'https://www.mogef.go.kr/mi/osg/mi_osg_s003.do?classId=1098&className=%EB%8B%A4%EB%AC%B8%ED%99%94%EA%B0%80%EC%A1%B1%EA%B3%BC',
     imgSrc: korean,
     alt: '다문화가족 자녀 교육활동비 지원',
-    title: '다문화가족 자녀 교육활동비 지원',
+    title: '다문화가족 자녀\n교육활동비 지원',
     explan:
       '다문화가족 자녀 교육활동비 지원은 다문화가족을 상대로, 여성가족부에서 자녀분들의 교육활동비를 지원해주는 서비스이다.',
     video: 'U21CSw2kZng',
