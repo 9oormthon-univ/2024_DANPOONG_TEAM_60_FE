@@ -1,11 +1,13 @@
 @font-face {
-    font-family: "SUIT";
-    font-weight: normal;
-    src: url("../../font/SUIT-Regular.ttf") format("truetype");
+  font-family: 'SUIT';
+  font-weight: normal;
+  src: url('../../font/SUIT-Regular.ttf') format('truetype');
 }
 
-body, html, #root {
-    display: flex;
+body,
+html,
+#root {
+  display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
@@ -17,85 +19,87 @@ body, html, #root {
 }
 
 p {
-    font-size: 10px;
-    font-family: 'SUIT';
-    line-height: 12.1px;
-    margin-top: 28px;
-    margin-bottom: 12px;
+  font-size: 10px;
+  font-family: 'SUIT';
+  line-height: 12.1px;
+  margin-top: 28px;
+  margin-bottom: 12px;
 }
 
 .welfare-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
 }
 
 .btn-container {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border: 1px solid #0053D6;
-    width: 100%;
-    height: 88px;
-    border-radius: 15px;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0;
-    cursor: pointer;
-    position: relative;
-    text-decoration: none;
-    color: inherit;
-    box-shadow: 2px 2px 6px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: 1px solid #0053d6;
+  width: 100%;
+  height: 88px;
+  border-radius: 15px;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 2px 2px 6px;
 }
 
 .icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 68px;
-    margin-left: 6%;
-    margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 68px;
+  margin-left: 6%;
+  margin-right: auto;
 }
-  
+
 .welfare-icon-img {
-    width: 61px;
-    height: 61px;
+  width: 61px;
+  height: 61px;
 }
 
 .text-container {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin-left: 7.5%;
-    margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 7.5%;
+  margin-right: auto;
 }
 
 .arrow-icon-img {
-    width: 31px;
-    height: 31px;
-    margin-right: 3%;
+  width: 31px;
+  height: 31px;
+  margin-right: 3%;
 }
 
 /* title, content 글씨체 SUIT로 교체 */
 
 .title {
-    font-size: 12px;
-    font-weight: bold;
-    font-family: 'SUIT';
-    margin-bottom: 12px;
-    color: black;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'SUIT';
+  margin-bottom: 12px;
+  color: black;
 }
 
 .content {
-    font-size: 9px;
-    font-weight: 400;
-    font-family: 'SUIT';
-    color: black;
-    margin-bottom: 2px;
+  font-size: 9px;
+  font-weight: 400;
+  font-family: 'SUIT';
+  color: black;
+  margin-bottom: 2px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+
+  color: black; /* 12.06 추가 */
 }

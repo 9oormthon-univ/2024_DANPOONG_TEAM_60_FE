@@ -102,7 +102,7 @@ const schoolLinks = [
     href: 'https://www.naju.go.kr/www/field_info/life',
     imgSrc: NaJu,
     alt: '나주시 중고교 신입생 교복 지원 사업',
-    title: '나주시 중고교 신입생 교복 지원 사업',
+    title: '나주시 중고교 신입생\n교복 지원 사업',
     explan:
       '전라남도 나주시는 중고교를 대상으로 신입생들에게 교복 무상 지원 사업을 시행하고 있다.',
     video: 'LBAqDeqRIRo',

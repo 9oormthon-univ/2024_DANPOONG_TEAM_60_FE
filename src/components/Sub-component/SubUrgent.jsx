@@ -32,10 +32,13 @@ const urgentLinks = [
     href: 'https://www.kamco.or.kr/portal/contents.do?mId=0202010000',
     imgSrc: Kamko,
     alt: '캠코 한국자산관리공사',
-    title: '캠코 한국자산관리공사',
+    title: '캠코\n한국자산관리공사',
+    customtitle: 'kamko-title',
     explan:
       '부실자산의 관리 및 청산, 기업구조조정 지원 등을 목적으로 하는 국내 유일의 자산관리 전문 금융위원회 산하 기금관리형 준정부기관. 약칭 캠코라고 불린다. 말 그대로 자산관리를 도와준다.',
-    video: 'FnI-ZgcYINU&t=217s',
+    video: 'TOjgfcaGz9c',
+    className: 'kamko-image', // 고유 클래스
+    customClass: 'kamko-button',
   },
   {
     href: 'https://www.hf.go.kr/ko/sub02/sub01_09_03_02.do',
@@ -100,11 +103,13 @@ const SubUrgent = () => {
                   src={link.imgSrc}
                   alt={link.alt}
                 />
-                <p className="sub-Urgent__ContainTitle">{link.title}</p>
+                <p className={`sub-Urgent__ContainTitle ${link.customtitle}`}>
+                  {link.title}
+                </p>
               </div>
             </a>
             <button
-              className="dropdown-button-small"
+              className={`dropdown-button-small ${link.customClass}`}
               onClick={() => {
                 toggleDropdown(index);
               }}
