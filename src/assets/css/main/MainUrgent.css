@@ -12,15 +12,22 @@ body, html, #root {
   height: 100%;
   width: 100%;
   font-family: 'SUIT';
-  overflow-y: scroll;
   justify-content: center;
   }
 
-p {
-    font-size: 10px;
-    line-height: 12.1px;
-    margin-top: 28px;
-    margin-bottom: 12px;
+  .welfare-container p {
+    font-size: 17px;
+    font-family: 'SUIT';
+    line-height: 19px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+@media (max-width: 390px) {
+    .welfare-container p {
+        font-size: 13px;
+    }
 }
 
 .welfare-container {
@@ -72,14 +79,14 @@ p {
 }
 
 .title {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
     margin-bottom: 12px;
 }
 
 .content {
-    font-size: 9px;
+    font-size: 11px;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
 }

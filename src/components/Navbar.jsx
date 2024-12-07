@@ -15,15 +15,19 @@ const Navbar = () => {
       <div className="navbar-container">
         <Link className="navbar-icon" to='/Main'>
           <img src={homeIcon} alt="Home" className="icon-img" />
+          <p>홈</p>
         </Link>
         <Link className="navbar-icon" to='/Chat'>
           <img src={chatIcon} alt="Chat" className="icon-img" />
+          <p>채팅</p>
         </Link>
         <Link className="navbar-icon" to="/Alarm">
           <img src={bellIcon} alt="Notifications" className="icon-img" />
+          <p>알림</p>
         </Link>
         <Link className="navbar-icon" to="/Board">
           <img src={clipboardIcon} alt="Clipboard" className="icon-img" />
+          <p>게시판</p>
         </Link>
       </div>
     );
