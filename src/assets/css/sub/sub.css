@@ -35,9 +35,6 @@ html,
   cursor: pointer;
   margin-left: 78%;
   max-width: 450px;
-
-  position: relative;
-  top: -8px;
 }
 
 .dropdown-button-small {
@@ -55,7 +52,7 @@ html,
   max-width: 450px;
 
   position: relative;
-  top: -14px;
+  top: 0px;
 }
 
 .dropdown-content {

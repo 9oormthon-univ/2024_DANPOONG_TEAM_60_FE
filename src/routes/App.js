@@ -1,5 +1,6 @@
 // 라우팅을 담당하는 파일
-import React, {useState, useEffect} from 'react';
+//import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainView from '../pages/main/MainView';
 import LoadingView from '../pages/main/LoadingView';
@@ -31,13 +32,10 @@ import Out from '../components/Education-compo/Out';
 import Chatbot from '../components/Main-component/Chatbot';
 
 const App = () => {
-
-  
-
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='chatbot' element={<Chatbot />} />
+        <Route path="chatbot" element={<Chatbot />} />
 
         <Route path="/" element={<LoadingView />} />
         <Route path="/Login" element={<Login />} />
@@ -64,7 +62,6 @@ const App = () => {
         <Route path="/boardwrite" element={<BoardWrite />} />
       </Routes>
       <Nav />
-      
     </BrowserRouter>
   );
 };

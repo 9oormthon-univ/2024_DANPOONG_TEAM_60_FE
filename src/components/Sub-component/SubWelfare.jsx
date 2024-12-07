@@ -115,7 +115,7 @@ const SubWelfare = () => {
               </div>
             </a>
             <button
-              className="dropdown-button"
+              className="dropdown-button-small"
               onClick={() => {
                 toggleDropdown(index);
               }}

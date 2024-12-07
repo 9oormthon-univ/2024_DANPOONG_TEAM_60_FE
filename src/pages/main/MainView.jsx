@@ -9,11 +9,10 @@ import MainEducation from '../../components/Main-component/MainEducation';
 import MainUrgent from '../../components/Main-component/MainUrgent';
 import MainLive from '../../components/Main-component/MainLive';
 import NavbarGuide from '../../components/Nav-components/NavbarGuide';
-import styled from 'styled-components';
+//import styled from 'styled-components';
 
 // 메인 페이지 뷰 파일
 const MainView = () => {
-
   const [showGuide, setShowGuide] = useState(true);
 
   const handleGuideComplete = () => {
