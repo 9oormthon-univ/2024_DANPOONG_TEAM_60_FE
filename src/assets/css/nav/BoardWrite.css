@@ -33,7 +33,8 @@ body, html, #root {
   .header-left {
     width: 24px;
     height: 24px;
-    margin-right: 12px;
+    margin-right: 5px;
+    margin-left: 10px;
   }
   
   .write-header h2 {

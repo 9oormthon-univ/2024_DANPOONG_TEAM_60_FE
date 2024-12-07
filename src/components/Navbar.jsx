@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const location = useLocation()
 
-  if (location.pathname !== '/Login' && location.pathname !== '/' && location.pathname !== '/login') {
+  if (location.pathname !== '/Login' && location.pathname !== '/' && location.pathname !== '/login' && location.pathname !== '/logintutorial' && location.pathname !== '/tutorial' ) {
     return (
       <div className="navbar-container">
         <Link className="navbar-icon" to='/Main'>
