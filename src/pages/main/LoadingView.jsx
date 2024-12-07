@@ -8,7 +8,7 @@ const LoadingView = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate("/Login");
+      navigate("/tutorial");
     }, 3500);
 
     return () => clearTimeout(timer);

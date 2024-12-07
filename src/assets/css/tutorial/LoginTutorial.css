@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'SUIT';
+    font-weight: normal;
+    src: url('../../font/SUIT-Regular.ttf') format('truetype');
+  }
+
+.tutorial-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F6FD;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    align-items: center;
+}
+
+.order-img {
+    margin-top: 39px;
+    width: 106px;
+    height: 10px;
+}
+
+.tutorial-title {
+    font-family: "SUIT";
+    font-size: 21px;
+    font-weight: bolder;
+    margin-top: 57px;
+    margin-bottom: 21.35px;
+}
+
+.tutorial-content {
+    width: 170px;
+    font-family: "SUIT";
+    font-size: 10px;  
+    text-align: left;
+}
+
+.main-img {
+    width: 315px;
+    height: 80vh;
+    overflow: hidden;
+}
