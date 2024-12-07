@@ -110,9 +110,12 @@ const SubHealth = () => {
             onClick={() => handleUnitClick(link.latitude, link.longitude)} // 클릭 이벤트 추가
           >
             <div className="flex__column">
-              <p className="sub-healthNumber">{link.number}</p>
-              <p className="sub-healthTitle">{link.title}</p>
+              <div className='health-title-container'>
+                <p className="sub-healthNumber">{link.number}</p>
+                <p className="sub-healthTitle">{link.title}</p>
+              </div>
               <p className="sub-healthDesc">{link.desc}</p>
+              
             </div>
           </div>
         ))}

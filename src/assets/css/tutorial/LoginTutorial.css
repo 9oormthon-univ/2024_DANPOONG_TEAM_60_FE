@@ -40,3 +40,20 @@
     height: 80vh;
     overflow: hidden;
 }
+
+.skipbtn {
+    position: absolute;
+    top: 20px; /* 화면 상단 여백 */
+    right: 20px; /* 화면 우측 여백 */
+    color: black; /* 글자색 (흰색) */
+    padding: 10px 15px; /* 버튼 내부 여백 */
+    border-radius: 20px; /* 버튼 둥글게 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+    font-size: 14px; /* 글자 크기 */
+    font-weight: bold; /* 글자 굵기 */
+    transition: background-color 0.3s ease; /* 호버 시 부드러운 전환 효과 */
+  }
+  
+  .skipbtn:hover {
+    background-color: #0056b3; /* 호버 시 배경색 어둡게 */
+  }

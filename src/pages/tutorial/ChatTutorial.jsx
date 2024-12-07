@@ -2,10 +2,15 @@ import React from "react";
 import "../../assets/css/tutorial/MainTutorial.css"
 import order from "../../assets/images/tutorial/tut6.png";
 import mainimg from "../../assets/images/tutorial/chat_tut.png";
+import { Link } from "react-router-dom";
 
 const ChatTutorial = ({ onNext }) => {
     return (
       <div className="tutorial-container" onClick={onNext}>
+        {/* Skip 버튼 */}
+        <Link to="/login" className="skipbtn">
+                Skip
+            </Link>
             <img src={order} alt="order" className="order-img"/>
             <div className="tutorial-title">많은 사람들과 정보공유</div>
             <div className="tutorial-content">오픈채팅을 이용해서 사람들과 소통하고 정보를 공유해요.</div>
