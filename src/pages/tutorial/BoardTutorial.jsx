@@ -2,10 +2,15 @@ import React from "react";
 import "../../assets/css/tutorial/MainTutorial.css"
 import order from "../../assets/images/tutorial/tut8.png";
 import mainimg from "../../assets/images/tutorial/main_tut.png";
+import { Link } from "react-router-dom";
 
 const BoardTutorial = ({ onNext }) => {
     return (
       <div className="tutorial-container" onClick={onNext}>
+        {/* Skip 버튼 */}
+        <Link to="/login" className="skipbtn">
+                Skip
+            </Link>
             <img src={order} alt="order" className="order-img"/>
             <div className="tutorial-title">게시판을 이용해 의견을 제시</div>
             <div className="tutorial-content">게시판을 이용해 서로의 생각을 공유해요.</div>
