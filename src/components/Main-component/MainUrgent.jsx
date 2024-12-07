@@ -8,7 +8,7 @@ import arrow from '../../assets/images/main/arrow_icon.png';
 const MainUrgent = () => {
   return (
     <div className='welfare-container'>
-      <p>긴급 대출 정보나 지역 사회 긴급 지원 센터 위치를 찾아보세요.</p>
+      <p>긴급 대출 정보나 긴급 지원 센터 위치를 찾아보세요.</p>
       <Link className='btn-container' to='/SubUrgent'>
         <div className='icon-container'>
           <img src={urgent} alt='urgent' className='urgent-icon-img' />

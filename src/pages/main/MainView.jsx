@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../assets/css/main/MainView.css';
 import MainHeader from '../../components/Main-component/MainHeader';
 import Main from '../../components/Main-component/Main';
@@ -11,6 +11,29 @@ import MainLive from '../../components/Main-component/MainLive';
 
 // 메인 페이지 뷰 파일
 const MainView = () => {
+
+  const [showGuide, setShowGuide] = useState(true);
+
+  const handleGuideComplete = () => {
+    setShowGuide(false);
+    localStorage.setItem('guideShown', 'true');
+  };
+
+  useEffect(() => {
+    const guideShown = localStorage.getItem('guideShown');
+    if (guideShown) {
+      setShowGuide(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (showGuide) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [showGuide]);
+
   return (
     <div className="view-container">
       <MainHeader />
@@ -22,6 +45,7 @@ const MainView = () => {
         <MainUrgent />
         <MainLive />
       </Main>
+
     </div>
   );
 };

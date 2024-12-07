@@ -10,7 +10,7 @@ import arrow from '../../assets/images/main/arrow_icon.png';
 const MainEducation = () => {
   return (
     <div className='welfare-container'>
-      <p>본인에게 필요한 교육을 찾아보세요.</p>
+      <p>필요한 교육을 찾아보세요.</p>
       <Link className='btn-container' to='/SubEducation'>
         <div className='icon-container'>
           <img src={edu} alt='edu' className='edu-icon-img' />

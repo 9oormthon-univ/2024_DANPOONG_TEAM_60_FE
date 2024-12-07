@@ -8,7 +8,7 @@ import arrow from '../../assets/images/main/arrow_icon.png';
 const MainWelfare = () => {
   return (
     <div className='welfare-container'>
-      <p>본인의 맞춤형 복지 서비스와 혜택을 확인해보세요.</p>
+      <p>맞춤형 복지 서비스와 혜택을 확인해보세요.</p>
       <Link className='btn-container' to='/SubWelfare'>
         <div className='icon-container'>
           <img src={welfare} alt='welfare' className='welfare-icon-img' />

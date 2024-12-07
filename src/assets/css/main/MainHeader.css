@@ -12,7 +12,6 @@ body, html, #root {
   height: 100%;
   width: 100%;
   font-family: 'SUIT';
-  overflow-y: scroll;
   justify-content: center;
   align-items: center;
 }
